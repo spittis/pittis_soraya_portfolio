@@ -1,0 +1,29 @@
+{
+  "name": "pittis_soraya_portfolio",
+  "version": "1.0.0",
+  "description": "Soraya Pittis' professional portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spittis/pittis_soraya_portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "soraya",
+    "pittis",
+    "designer"
+  ],
+  "author": "Soraya Pittis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spittis/pittis_soraya_portfolio/issues"
+  },
+  "homepage": "https://github.com/spittis/pittis_soraya_portfolio#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2"
+  }
+}
