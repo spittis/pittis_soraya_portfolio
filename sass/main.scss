@@ -1,9 +1,28 @@
 @import 'modules/vars';
 @import 'modules/mediaqueries';
 @import 'modules/header';
+@import 'modules/portfolio';
 @import 'modules/footer';
 @import 'modules/about';
 
 .hidden {
     display:none;
 }
+
+body
+	{
+	  margin: 0;
+      padding: 0;
+      width: 100%;
+      background: url(../images/dark2.jpg);
+    }
+    
+    @font-face {
+      font-family: 'dolce_vita_heavybold';
+      src: url('dolce_vita_heavy_bold-webfont.woff2') format('woff2'),
+           url('dolce_vita_heavy_bold-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  
+  }
+  

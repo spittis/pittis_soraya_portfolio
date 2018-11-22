@@ -1,0 +1,39 @@
+
+#portfolioTitleBox
+{
+    height: 400px;
+    width: 100%;
+}
+
+#portfolioTitleBox h2 /*Portfolio Title*/
+{
+    text-align: center;
+    font-family: $font-stock; 
+    letter-spacing: 20px;
+    font-size: 3.5em;
+    color: #f8a9a9;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+   -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-weight: lighter;
+}
+
+#portfolioTitleBox p /*Text under Portfolio Title*/
+{
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+    font-family: $font-stock; 
+    font-weight: 100;
+    letter-spacing: 2px;
+    //text-shadow: 0 0 30px #fff, 0 0 40px #fff;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #f7c882, 0 0 10px #db310e, 0 0 20px red, 0 0 10px red, 0 0 200px red, 0 0 300px red, 0 0 280px red;
+  }
+  to {
+    text-shadow: 0 0 20px #f70808, 0 0 20px #db310e, 0 0 40px red, 0 0 20px red, 0 0 210px red, 0 0 310px red, 0 0 290px red;
+  }
+}
