@@ -1,0 +1,14 @@
+
+$font-stock: 'Quicksand', 'Avenir', sans-serif;
+$headers: 'dolce_vita_heavybold', sans-serif;
+$blue: #062ff9;
+$red: #f70808;
+
+@font-face {
+    font-family: 'dolce_vita_heavybold';
+    src: url('./dolce_vita_heavy_bold-webfont.woff2') format('woff2'),
+         url('./dolce_vita_heavy_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,45 @@
+#footer
+{
+    width: 100%;
+    background-color: black;
+}
+
+#logoBottom
+{
+    text-align: center;
+}
+
+#footerLogo
+{
+    text-align: center;
+    width: 5%;
+    padding: 2%;
+}
+
+#socialIcons
+{
+    text-align: center;
+}
+
+#socialIcons a
+{
+    width: 2%;
+    height: auto;
+    display: inline-block;
+    padding: 0.3%;
+}
+
+#socialIcons a:hover
+{
+    box-shadow: 0 0 10px #82bef7, 0 0 10px blue, 0 0 20px blue, 0 0 10px blue, 0 0 200px blue, 0 0 300px blue, 0 0 280px blue;
+}
+
+#copyright
+{
+    color: white;
+    font-family: $font-stock;
+    font-size: 0.7em;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
