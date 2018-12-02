@@ -1,0 +1,93 @@
+#aboutParagraph
+{
+    font-family: $font-stock;
+    color: white;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2em;
+    padding: 15%;
+}
+
+#skills
+{
+    -webkit-clip-path: polygon(0 0, 100% 17%, 100% 83%, 0% 100%);
+    clip-path: polygon(0 0, 100% 17%, 100% 83%, 0% 100%);
+    background: url(../images/brickwall.png);
+    width: 100%;
+}
+
+#skills h2
+{
+    text-align: center;
+    font-family: $font-stock;
+    font-size: 4em;
+    color: rgb(211, 211, 250);
+    padding: 5%;
+    -webkit-animation: glowBlue 1s ease-in-out infinite alternate;
+    -moz-animation: glowBlue 1s ease-in-out infinite alternate;
+    animation: glowBlue 1s ease-in-out infinite alternate;
+    font-weight: lighter;
+    letter-spacing: 0.3em;
+}
+
+@-webkit-keyframes glowBlue {
+  from {
+    text-shadow: 0 0 10px #f7c882, 0 0 10px blue, 0 0 20px blue, 0 0 10px blue, 0 0 200px blue, 0 0 300px blue, 0 0 280px blue;
+  }
+  to {
+    text-shadow: 0 0 20px blue, 0 0 20px blue, 0 0 40px blue, 0 0 20px blue, 0 0 210px blue, 0 0 310px blue, 0 0 290px blue;
+  }
+}
+
+#skillIcons
+{
+    text-align: center;
+}
+
+#skillIcons img
+{
+    width: 7%;
+    padding-right: 4%;
+    padding-left: 4%;
+    cursor: pointer;
+}
+
+#skillIcons img:hover
+{
+    width: 7.4%;
+}
+
+#skillInfo
+{
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 150px;
+    padding-top: 80px;
+}
+
+#skillInfo p
+{
+    text-align: center;
+    margin: 0 auto;
+    font-family: $font-stock;
+
+}
+
+#skill-title
+{
+    font-family: $font-stock;
+    font-weight: normal;
+    text-align: center;
+}
+
+#resumeDownload
+{
+    text-align: center;
+}
+
+#resumeDownload span
+{
+    color: white;
+    font-family: $font-stock;
+}

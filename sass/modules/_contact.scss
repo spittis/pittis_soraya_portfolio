@@ -1,0 +1,122 @@
+    /*CONTACT US*/
+
+#headerContact
+{
+    width: 100% !important;
+    height: 100% !important;
+}
+    
+.contactHeading
+{
+    font-family: $headers;
+    color: white;
+    float: left;
+    padding-left: 25%;
+    padding-top: 5%;
+    font-size: 2.2em;
+}
+
+#contactSentence
+{
+    font-family: $font-stock;
+    color: white;
+    float: left;
+    padding-right: 35%;
+    padding-left: 15%;
+    padding-top: 0%;
+    text-align: center;
+}
+
+    #bodyContact
+	{
+	  margin: 0;
+      padding: 0;
+      width: 100%;
+      background: url(../images/brickwall2.png);
+    }
+	
+    #contact h2{
+        color: white; 
+        text-align: center;
+        font-size: 2.4em;
+        margin-top: -50%;
+    }
+    #hi
+    {
+        position: fixed;
+        margin-left: 70%;
+        margin-top: 20%;
+    }
+    
+    #contactForm
+    {
+        float: left;
+        letter-spacing: 0.5px;
+        line-height: 3em;
+        padding: 10%;
+        width: 80%;
+    }
+
+    #contactForm label
+    {
+        display: block;
+        color: black;
+    }
+
+    #submit{
+        color: black;
+        padding: 5px;
+        border-radius: 6px;
+        background-color: white;
+        width: 20% !important;
+        cursor: pointer;
+        display: block;
+    }
+
+    #contactForm input{
+        width: 50%;
+        height: 30px;
+    }
+
+    #comments{
+        width: 50%;
+    }
+
+
+.blackLineContact
+{
+    width: 100%;
+    -webkit-clip-path: polygon(0 0, 75% 0, 55% 100%, 0% 100%);
+    clip-path: polygon(0 0, 75% 0, 55% 100%, 0% 100%);
+    float: left;
+    background-color: #0e0e0e;
+}
+
+
+#contactForm label
+{
+    color: white;
+    font-family: $font-stock;
+}
+
+#contactInfoTitle /*Contact Info Title*/
+{
+    margin: 0 auto;
+    font-family: $font-stock; 
+    color: black;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-weight: lighter;
+    font-size: 2em;
+}
+
+/* SOCIAL MEDIA */
+
+#socialContact a
+{
+    display: inline-block;
+    fill: black;
+    margin: 0 auto;
+    padding-left: 90%;
+}

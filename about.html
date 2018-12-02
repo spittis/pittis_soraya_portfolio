@@ -7,14 +7,132 @@
     <title>Soraya Pittis - About</title>
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-<body>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> <!--VUE-->
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    
+         <!--Waypoint-->
+         <script src="js/noframework.waypoints.min.js"></script>
+         <script src="js/mywaypoint.js"></script>
+    
+    </head>
+    <body>
+    
+    <div id="header">
+    <h2 class="hidden">Header</h2>
+    
+    <a href="index.html"><img id="logo" src="images/logo.svg" alt="Soraya Pittis Logo" title="Soraya Pittis Logo"></a>
+    
+    
+    <div class="blackLine big"><div class="black big"><h2 id="myname">ABOUT ME</h2></div></div>
+    <img id="headerImg" class="big" src="images/front-h.jpg" alt="Soraya Pittis" title="Soraya Pittis">
+    <img id="headerImg" class="small" src="images/header-mobile.jpg" alt="Soraya Pittis" title="Soraya Pittis">
+    <h2 id="iam">WHO'S SORAYA?</h2>
+    <p id="iam2">not another brick in the wall.</p>
+    
+    
+    
+    
+    
+    
+        <nav role="navigation">
+                <div id="menuToggle">
+                    <h2 class="hidden">Navigation</h2>
+                
+                  <input id="checkbox" type="checkbox"/>
+                  
+              
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+              
+                  <ul id="menu">
+                    <a href="index.html"><li id="home">HOME</li></a>
+                    <a href="about.html"><li>ABOUT</li></a>
+                    <a href="index.html#portfolioTitleBox"><li>PORTFOLIO</li></a>
+                    <a href="contact.html"><li>CONTACT ME</li></a>
+    
+    
+                    <div id="social">
+                        <a target="_blank" href="https://www.instagram.com/sorayapittis/?hl=en"><img src="images/instagram.svg" alt="instagram" title="instagram"></a>
+                        <a target="_blank" href="https://github.com/spittis"><img src="images/github.svg" alt="github" title="github"></a>
+                        <a target="_blank" href="https://www.behance.net/pittissora0cdb"><img src="images/behance.svg" alt="behance" title="behance"></a>
+                        <a target="_blank" href="https://www.facebook.com/soraya.pittis"><img src="images/facebook.svg" alt="facebook" title="facebook"></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/soraya-pittis-a03256163/"><img src="images/linkedin.svg" alt="linked in" title="linked in"></a>
+                     </div>
+                  </ul> 
+                </div>
+        </nav>
+    </div>  
+
+
+    <div id="aboutParagraph">
+            <p>Hi, I'm Soraya Pittis. <br> I am a 21 year old interactive media developer and designer based in Toronto, Ontario. Other than designing, I am very passionate about eating food (especially pizza), travelling, and watching movies. </p>
+        </div>
+
+
+    <div id="skills">
+        <h2>SKILLS</h2>
+        <div id="skillIcons">
+            <img src="images/photography.png" id="photograph" class="data-ref" data-index="0" alt="photography" title="photography">
+            <img src="images/pencil.png" alt="design" title="design" id="design" class="data-ref" data-index="2">
+            <img src="images/branding.png" alt="branding" title="branding" id="branding" class="data-ref" data-index="3">
+            <img src="images/develop.png" alt="develop" title="develop" id="developing" class="data-ref" data-index="4">
+        </div>
     
 
+	<div id="skillInfo" class="modelInfo astro-box">
+		<h4 id="skill-title" class="modelName"></h4>
+		<p class="priceInfo hidden"></p>
+		<p id="astro-text skillText" class="modelDetails">These are just a few of areas that I am experienced in!</p>
+	</div>
+</div>
 
 
+    <div id="resumeDownload">
+    <a href="./includes/sorayapittisresume.pdf" download="sorayapittisresume.pdf">
+        <span> download my résumé (PDF) </span>
+    </a>
+    </div>  
 
-    <script src="js/gulpfile.js"></script>
-    <script src="js/main.js"></script>
-</body>
-</html>
+
+    
+  
+    
+    
+    
+    <div id="totop">
+        <h2 class="hidden">back to top</h2>
+        <p>BACK TO TOP</p>
+    </div>
+    
+    <div id="footer">
+        <h2 class="hidden">Footer</h2>
+        <div id="logoBottom">
+        <a href="index.html"><img id="footerLogo" src="images/logo.svg" alt="Soraya Pittis Logo" title="Soraya Pittis Logo"></a>
+        </div>
+    
+        <div id="socialIcons">
+        <a target="_blank" href="https://www.instagram.com/sorayapittis/?hl=en"><img src="images/instagram.svg" alt="instagram" title="instagram"></a>
+        <a target="_blank" href="https://github.com/spittis"><img src="images/github.svg" alt="github" title="github"></a>
+        <a target="_blank" href="https://www.behance.net/pittissora0cdb"><img src="images/behance.svg" alt="behance" title="behance"></a>
+        <a target="_blank" href="https://www.facebook.com/soraya.pittis"><img src="images/facebook.svg" alt="facebook" title="facebook"></a>
+        <a target="_blank" href="https://www.linkedin.com/in/soraya-pittis-a03256163/"><img src="images/linkedin.svg" alt="linked in" title="linked in"></a>
+        </div>
+    
+        <div id="copyright"><p>©2018 DESIGNED AND DEVELOPED BY SORAYA PITTIS</p></div>
+    
+    </div>
+    
+    
+        <script src="js/gulpfile.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/master.js"></script>
+        <script src="js/scrolltotop.js"></script>
+        <script src="js/lightbox.js"></script>
+        <!--EDIT BELOW - COPIED FROM INFOGRAPHIC -->
+            <script src="js/countUp.js"></script>
+            <script src="js/count.js"></script>
+            
+    </body>
+    </html>
