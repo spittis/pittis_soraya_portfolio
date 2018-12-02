@@ -7,7 +7,13 @@
     <title>Soraya Pittis - Home</title>
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> <!--VUE-->
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+     <!--Waypoint-->
+     <script src="js/noframework.waypoints.min.js"></script>
+     <script src="js/mywaypoint.js"></script>
+
 </head>
 <body>
 
@@ -17,10 +23,11 @@
 <a href="index.html"><img id="logo" src="images/logo.svg" alt="Soraya Pittis Logo" title="Soraya Pittis Logo"></a>
 
 
-<div class="blackLine"><h2 id="name">SORAYAPITTIS</h2></div>
-<img id="headerImg" src="images/back3.jpg" alt="Soraya Pittis" title="Soraya Pittis">
+<div class="blackLine big"><div class="black big"><h2 id="myname">SORAYAPITTIS</h2></div></div>
+<img id="headerImg" class="big" src="images/back3.jpg" alt="Soraya Pittis" title="Soraya Pittis">
+<img id="headerImg" class="small" src="images/header-mobile.jpg" alt="Soraya Pittis" title="Soraya Pittis"> <!--THEY HAVE THE SAME ID-->
 <h2 id="iam">I AM SORAYA.</h2>
-<p id="iam2">designer. photographer. food lover.</p>
+<p id="iam2">designer. photographer. producer.</p>
 
 
 
@@ -42,8 +49,8 @@
               <ul id="menu">
                 <a href="index.html"><li id="home">HOME</li></a>
                 <a href="about.html"><li>ABOUT</li></a>
-                <a href="#portfolio"><li>PORTFOLIO</li></a>
-                <a href="#contact"><li>CONTACT ME</li></a>
+                <a href="#portfolioTitleBox"><li>PORTFOLIO</li></a>
+                <a href="contact.html"><li>CONTACT ME</li></a>
 
 
                 <div id="social">
@@ -68,14 +75,49 @@
 
 </div>  
 
-<div id="portfolioTitleBox">
-<h2>PORTFOLIO</h2>
-<p>Check out a small sample of my most recent work</p>
+
+<main id="app"><!-- > Main tag for Vue <!-->
+    <div id="portfolioTitleBox">
+        <h2 class="welcome-message">{{ welcomemessage }}</h2>
+        <p>Check out a small sample of my most recent work</p>
+    </div>
+<!--
+    <ul class="portfolioImages">
+        <li v-for="video in videodata">
+                <img class="logo" :src="'images/' + video.portfolio_thumb" alt="portfolio piece">
+            </a>
+        </li>
+    </ul>
+-->
 
 
+   
+        <div v-for="video in videodata">
+            <img class="portfolioImage" :src="'images/' + video.portfolio_thumb" width="200px">
+        </div>
+    
+        <div>
+            <img class="logo" src="images/strangerthings.jpg">
+            <img class="logo" src="images/back.jpg" width="100px">
+        </div>
+    
+    <div id="myModal" class="modal">
+        <span class="close">close</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+
+</main>
+
+
+
+<div id="totop">
+    <h2 class="hidden">back to top</h2>
+    <p>BACK TO TOP</p>
 </div>
 
 <div id="footer">
+    <h2 class="hidden">Footer</h2>
     <div id="logoBottom">
     <a href="index.html"><img id="footerLogo" src="images/logo.svg" alt="Soraya Pittis Logo" title="Soraya Pittis Logo"></a>
     </div>
@@ -95,5 +137,8 @@
 
     <script src="js/gulpfile.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/master.js"></script>
+    <script src="js/scrolltotop.js"></script>
+    <script src="js/lightbox.js"></script> 
 </body>
 </html>

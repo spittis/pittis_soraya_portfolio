@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soraya Pittis - Contact</title>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> <!--VUE-->
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    
+         <!--Waypoint-->
+         <script src="js/noframework.waypoints.min.js"></script>
+         <script src="js/mywaypoint.js"></script>
+    
+    </head>
+    <body id="bodyContact">
+    
+    <div>
+    <h2 class="hidden">Contact Header</h2>
+    
+    <a href="index.html"><img id="logo" src="images/logo.svg" alt="Soraya Pittis Logo" title="Soraya Pittis Logo"></a>
+    
+
+    <div class="blackLineContact big">
+
+            <h2 class="contactHeading">CONTACT ME</h2>
+            <p id="contactSentence">Interested in working together? <br> Send me a message and I'll get back to you as soon as I can!</p>
+        
+            
+       
+        <div>
+            
+            <form id="contactForm" action="/pittis_soraya_portfolio/includes/sendEmail.php" method="POST">
+
+                
+                    <label for="name">NAME</label>
+                    <input type="text" required id="name" name="name" size="30" placeholder="John Smith">
+                    
+                    <label for="email">EMAIL</label>
+                    <input type="email" required id="email" name="email" size="30" placeholder="123@example.com">
+                    
+                    <label for="message">MESSAGE/QUESTIONS</label>
+                    <textarea name="message" id="message" required cols="50" rows="7"></textarea>
+                   
+                    <button id="submit" type="submit">ALL DONE!</button>
+            </form>
+        </div>
+    </div>
+    <div id="hi">
+            <p id="contactInfoTitle">CONTACT INFO</p>
+            <p>soraya.pittis@hotmail.com</p>
+            <div id="socialContact">
+                    <a target="_blank" href="https://www.instagram.com/sorayapittis/?hl=en"><img src="images/instagram.svg" alt="instagram" title="instagram"></a>
+                    <a target="_blank" href="https://github.com/spittis"><img src="images/github.svg" alt="github" title="github"></a>
+                    <a target="_blank" href="https://www.behance.net/pittissora0cdb"><img src="images/behance.svg" alt="behance" title="behance"></a>
+                    <a target="_blank" href="https://www.facebook.com/soraya.pittis"><img src="images/facebook.svg" alt="facebook" title="facebook"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/soraya-pittis-a03256163/"><img src="images/linkedin.svg" alt="linked in" title="linked in"></a>
+                 </div>
+    </div>
+
+
+  
+    
+    
+        <nav role="navigation">
+                <div id="menuToggle">
+                    <h2 class="hidden">Navigation</h2>
+                
+                  <input id="checkbox" type="checkbox"/>
+                  
+              
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+              
+                  <ul id="menu">
+                    <a href="index.html"><li id="home">HOME</li></a>
+                    <a href="about.html"><li>ABOUT</li></a>
+                    <a href="index.html#portfolioTitleBox"><li>PORTFOLIO</li></a>
+                    <a href="contact.html"><li>CONTACT ME</li></a>
+    
+    
+                    <div id="social">
+                        <a target="_blank" href="https://www.instagram.com/sorayapittis/?hl=en"><img src="images/instagram.svg" alt="instagram" title="instagram"></a>
+                        <a target="_blank" href="https://github.com/spittis"><img src="images/github.svg" alt="github" title="github"></a>
+                        <a target="_blank" href="https://www.behance.net/pittissora0cdb"><img src="images/behance.svg" alt="behance" title="behance"></a>
+                        <a target="_blank" href="https://www.facebook.com/soraya.pittis"><img src="images/facebook.svg" alt="facebook" title="facebook"></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/soraya-pittis-a03256163/"><img src="images/linkedin.svg" alt="linked in" title="linked in"></a>
+                     </div>
+        
+    
+                  </ul>
+    
+    
+                
+                </div>
+    
+    
+        </nav>
+    
+    
+    
+    </div>  
+
+
+</body>
+</html>

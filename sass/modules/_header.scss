@@ -2,11 +2,9 @@
 
 #logo
 {
-    width: 5%;
     margin-top: 2%;
     margin-left: 2%;
     position: fixed;
-    z-index: 4;
 }
 
 
@@ -16,8 +14,6 @@
 #menuToggle
 {
   position: fixed;
-  top: 5%;
-  left: 93%;
   z-index: 1;
 }
 
@@ -77,23 +73,18 @@
   transform: rotate(-47deg) translate(0, -1px);
 }
 	
+
 #menu
 {
-  top: 15%;
-  position: fixed;
-  width: 100%;
-  height: 1000px;
-  margin: -10% 0 0 -80%;
-  background: black;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  transform-origin: 0% 0%;
-  transform: translate(150%, 0);
-  transition: transform 0.7s;
-  -webkit-clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%);
-  letter-spacing: 2px;
-  padding-top:7%;
+    -webkit-clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%);
+    background: black;
+    position: fixed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(150%, 0);
+    transition: transform 0.7s;
 }
 
 #menu li
@@ -139,23 +130,14 @@
 #header
 {
     width: 100%;
-    height: 800px;
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
 }
 
-#headerImg
-{
-    width: 85%;
-    height: auto;
-    margin-left: 15%;
-    position: fixed;
-}
 
 /* HEADER DIAGONAL LINE */
 .blackLine
 {
-    background-color: #0e0e0e;
     width: 30%;
     height: 800px;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -163,10 +145,11 @@
     z-index: 3;
     float: left;
     position: fixed;
+    background-color: #0e0e0e;
 }
 
 
-#name
+#myname
 {
     color: white;
     z-index: 3;
@@ -177,6 +160,7 @@
 }
 
 
+
 /* Header Text */
 #iam
 {
@@ -184,9 +168,6 @@
     color: white;
     z-index: 1;
     font-family: $headers;
-    font-size: 3em;
-    top: 60%;
-    left: 60%;
 }
 
 #iam2
@@ -195,9 +176,6 @@
     color: white;
     z-index: 1;
     font-family: $font-stock;
-    font-size: 2em;
-    top: 70%;
-    left: 60%;
     font-weight: lighter;
 }
 
@@ -207,16 +185,13 @@
 
 #social
 {
-    margin-top: 5%;
     text-align: center;
 }
 
 #social a
 {
-    width: 2%;
     height: auto;
     display: inline-block;
-    padding: 0.4%;
 }
 
 #social a:hover

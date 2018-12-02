@@ -4,20 +4,305 @@
   font-weight: normal;
   font-style: normal;
 }
+@media (max-width: 479px) {
+  .big {
+    display: none;
+  }
+
+  #header {
+    height: 680px;
+  }
+
+  #logo {
+    width: 15%;
+    z-index: 4;
+  }
+
+  #menuToggle {
+    top: 3%;
+    left: 90%;
+    z-index: 1;
+    /* maybe change this so on scroll it has background and is on top */
+  }
+
+  #menu {
+    top: 0%;
+    width: 120%;
+    height: 100%;
+    margin: 0 0 0 -110%;
+    letter-spacing: 2px;
+    padding-top: 10%;
+  }
+
+  #headerImg {
+    width: 100%;
+    height: auto;
+    position: fixed;
+  }
+
+  #iam {
+    font-size: 2em;
+    top: 65%;
+    left: 30%;
+  }
+
+  #iam2 {
+    font-size: 1.2em;
+    top: 72%;
+    left: 30%;
+  }
+
+  #social a {
+    width: 7%;
+    padding: 0.4%;
+  }
+
+  #social {
+    margin-top: 10%;
+  }
+
+  /* MOBILE - PORTFOLIO */
+  #portfolioTitleBox {
+    height: 300px;
+    width: 100%;
+  }
+
+  #portfolioTitleBox h2 {
+    letter-spacing: 15px;
+    font-size: 2em;
+  }
+
+  #portfolioTitleBox p {
+    font-size: 100%;
+    font-weight: 100;
+    letter-spacing: 2px;
+  }
+
+  /* MOBILE - FOOTER*/
+  #footerLogo {
+    width: 15%;
+    padding: 2%;
+  }
+
+  #socialIcons a {
+    width: 8%;
+    padding: 2%;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .small {
+    display: none;
+  }
+
+  .blackLine {
+    display: none;
+  }
+
+  #name {
+    display: none;
+  }
+
+  #header {
+    height: 490px;
+  }
+
+  #logo {
+    width: 10%;
+    z-index: 4;
+  }
+
+  #menuToggle {
+    top: 4%;
+    left: 91%;
+    z-index: 1;
+    /* maybe change this so on scroll it has background and is on top */
+  }
+
+  #menu {
+    top: 0%;
+    width: 130%;
+    height: 100%;
+    margin: 0 0 0 -110%;
+    letter-spacing: 2px;
+    padding-top: 10%;
+  }
+
+  #headerImg {
+    width: 100%;
+    height: auto;
+    position: fixed;
+  }
+
+  #iam {
+    font-size: 2em;
+    top: 40%;
+    left: 60%;
+  }
+
+  #iam2 {
+    font-size: 1.2em;
+    top: 50%;
+    left: 60%;
+  }
+
+  /* TABLET - PORTFOLIO */
+
+  /* TABLET - FOOTER*/
+}
+@media (min-width: 480px) and (max-width: 768px) and (min-width: 480px) and (max-width: 670px) {
+  /* fixing header sizes for smaller tablet */
+  #header {
+    height: 420px;
+  }
+
+  #iam {
+    font-size: 1.5em;
+    top: 30%;
+    left: 50%;
+  }
+
+  #iam2 {
+    font-size: 1.1em;
+    top: 35%;
+    left: 50%;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  #social a {
+    width: 4%;
+    padding: 1%;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  #social {
+    margin-top: 10%;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  #portfolioTitleBox {
+    height: 300px;
+    width: 100%;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  #portfolioTitleBox h2 {
+    letter-spacing: 15px;
+    font-size: 2em;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  #portfolioTitleBox p {
+    font-size: 100%;
+    font-weight: 100;
+    letter-spacing: 2px;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  #footerLogo {
+    width: 10%;
+    padding: 2%;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  #socialIcons a {
+    width: 4%;
+    padding: 1.8%;
+  }
+}
+@media (min-width: 769px) {
+  .small {
+    display: none;
+  }
+
+  #header {
+    height: 800px;
+  }
+
+  #logo {
+    width: 5%;
+    z-index: 4;
+  }
+
+  #menuToggle {
+    top: 5%;
+    left: 93%;
+  }
+
+  #menu {
+    top: 15%;
+    width: 100%;
+    height: 1000px;
+    margin: -10% 0 0 -80%;
+    letter-spacing: 2px;
+    padding-top: 7%;
+  }
+
+  #headerImg {
+    width: 85%;
+    height: auto;
+    margin-left: 15%;
+    position: fixed;
+  }
+
+  #iam {
+    font-size: 3em;
+    top: 60%;
+    left: 60%;
+  }
+
+  #iam2 {
+    font-size: 2em;
+    top: 70%;
+    left: 60%;
+  }
+
+  #social a {
+    width: 2.3%;
+    padding: 0.4%;
+  }
+
+  #social {
+    margin-top: 5%;
+  }
+
+  /* DESKTOP - PORTFOLIO */
+  #portfolioTitleBox {
+    height: 400px;
+    width: 100%;
+  }
+
+  #portfolioTitleBox h2 {
+    letter-spacing: 20px;
+    font-size: 3.5em;
+  }
+
+  #portfolioTitleBox p {
+    font-size: 1.3em;
+    font-weight: 100;
+    letter-spacing: 2px;
+  }
+
+  /* DESKTOP - FOOTER */
+  #footerLogo {
+    width: 5%;
+    padding: 2%;
+  }
+
+  #socialIcons a {
+    width: 2%;
+    padding: 0.3%;
+  }
+}
 /* LOGO */
 #logo {
-  width: 5%;
   margin-top: 2%;
   margin-left: 2%;
   position: fixed;
-  z-index: 4;
 }
 
 /* MENU TOGGLE*/
 #menuToggle {
   position: fixed;
-  top: 5%;
-  left: 93%;
   z-index: 1;
 }
 
@@ -70,21 +355,15 @@
 }
 
 #menu {
-  top: 15%;
-  position: fixed;
-  width: 100%;
-  height: 1000px;
-  margin: -10% 0 0 -80%;
+  -webkit-clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%);
   background: black;
+  position: fixed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(150%, 0);
   transition: transform 0.7s;
-  -webkit-clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%);
-  letter-spacing: 2px;
-  padding-top: 7%;
 }
 
 #menu li {
@@ -116,21 +395,12 @@
 /* Header Image */
 #header {
   width: 100%;
-  height: 800px;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
 }
 
-#headerImg {
-  width: 85%;
-  height: auto;
-  margin-left: 15%;
-  position: fixed;
-}
-
 /* HEADER DIAGONAL LINE */
 .blackLine {
-  background-color: #0e0e0e;
   width: 30%;
   height: 800px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -138,9 +408,10 @@
   z-index: 3;
   float: left;
   position: fixed;
+  background-color: #0e0e0e;
 }
 
-#name {
+#myname {
   color: white;
   z-index: 3;
   font-family: "dolce_vita_heavybold", sans-serif;
@@ -155,9 +426,6 @@
   color: white;
   z-index: 1;
   font-family: "dolce_vita_heavybold", sans-serif;
-  font-size: 3em;
-  top: 60%;
-  left: 60%;
 }
 
 #iam2 {
@@ -165,38 +433,25 @@
   color: white;
   z-index: 1;
   font-family: "Quicksand", "Avenir", sans-serif;
-  font-size: 2em;
-  top: 70%;
-  left: 60%;
   font-weight: lighter;
 }
 
 #social {
-  margin-top: 5%;
   text-align: center;
 }
 
 #social a {
-  width: 2%;
   height: auto;
   display: inline-block;
-  padding: 0.4%;
 }
 
 #social a:hover {
   box-shadow: 0 0 10px #82bef7, 0 0 10px blue, 0 0 20px blue, 0 0 10px blue, 0 0 200px blue, 0 0 300px blue, 0 0 280px blue;
 }
 
-#portfolioTitleBox {
-  height: 400px;
-  width: 100%;
-}
-
 #portfolioTitleBox h2 {
   text-align: center;
   font-family: "Quicksand", "Avenir", sans-serif;
-  letter-spacing: 20px;
-  font-size: 3.5em;
   color: #f8a9a9;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
@@ -207,10 +462,7 @@
 #portfolioTitleBox p {
   text-align: center;
   color: white;
-  font-size: 1.3em;
   font-family: "Quicksand", "Avenir", sans-serif;
-  font-weight: 100;
-  letter-spacing: 2px;
 }
 
 @-webkit-keyframes glow {
@@ -221,6 +473,103 @@
     text-shadow: 0 0 20px #f70808, 0 0 20px #db310e, 0 0 40px red, 0 0 20px red, 0 0 210px red, 0 0 310px red, 0 0 290px red;
   }
 }
+.portfolioImage {
+  width: 50%;
+  display: inline;
+  float: left;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 105px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 30%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.3s;
+  animation-name: zoom;
+  animation-duration: 0.3s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.close {
+  position: absolute;
+  text-decoration: underline;
+  top: 30px;
+  right: 50px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.close:hover {
+  color: #efefef;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#lightbox {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.modal-content {
+  width: 80%;
+}
+
 #footer {
   width: 100%;
   background-color: black;
@@ -232,8 +581,6 @@
 
 #footerLogo {
   text-align: center;
-  width: 5%;
-  padding: 2%;
 }
 
 #socialIcons {
@@ -241,10 +588,8 @@
 }
 
 #socialIcons a {
-  width: 2%;
   height: auto;
   display: inline-block;
-  padding: 0.3%;
 }
 
 #socialIcons a:hover {
@@ -260,6 +605,206 @@
   letter-spacing: 1px;
 }
 
+#totop {
+  color: white;
+  font-family: "Quicksand", "Avenir", sans-serif;
+  font-size: 0.7em;
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+#aboutParagraph {
+  font-family: "Quicksand", "Avenir", sans-serif;
+  color: white;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.2em;
+  padding: 15%;
+}
+
+#skills {
+  -webkit-clip-path: polygon(0 0, 100% 17%, 100% 83%, 0% 100%);
+  clip-path: polygon(0 0, 100% 17%, 100% 83%, 0% 100%);
+  background: url(../images/brickwall.png);
+  width: 100%;
+}
+
+#skills h2 {
+  text-align: center;
+  font-family: "Quicksand", "Avenir", sans-serif;
+  font-size: 4em;
+  color: #d3d3fa;
+  padding: 5%;
+  -webkit-animation: glowBlue 1s ease-in-out infinite alternate;
+  -moz-animation: glowBlue 1s ease-in-out infinite alternate;
+  animation: glowBlue 1s ease-in-out infinite alternate;
+  font-weight: lighter;
+  letter-spacing: 0.3em;
+}
+
+@-webkit-keyframes glowBlue {
+  from {
+    text-shadow: 0 0 10px #f7c882, 0 0 10px blue, 0 0 20px blue, 0 0 10px blue, 0 0 200px blue, 0 0 300px blue, 0 0 280px blue;
+  }
+  to {
+    text-shadow: 0 0 20px blue, 0 0 20px blue, 0 0 40px blue, 0 0 20px blue, 0 0 210px blue, 0 0 310px blue, 0 0 290px blue;
+  }
+}
+#skillIcons {
+  text-align: center;
+}
+
+#skillIcons img {
+  width: 7%;
+  padding-right: 4%;
+  padding-left: 4%;
+  cursor: pointer;
+}
+
+#skillIcons img:hover {
+  width: 7.4%;
+}
+
+#skillInfo {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 150px;
+  padding-top: 80px;
+}
+
+#skillInfo p {
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Quicksand", "Avenir", sans-serif;
+}
+
+#skill-title {
+  font-family: "Quicksand", "Avenir", sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+#resumeDownload {
+  text-align: center;
+}
+
+#resumeDownload span {
+  color: white;
+  font-family: "Quicksand", "Avenir", sans-serif;
+}
+
+/*CONTACT US*/
+#headerContact {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.contactHeading {
+  font-family: "dolce_vita_heavybold", sans-serif;
+  color: white;
+  float: left;
+  padding-left: 25%;
+  padding-top: 5%;
+  font-size: 2.2em;
+}
+
+#contactSentence {
+  font-family: "Quicksand", "Avenir", sans-serif;
+  color: white;
+  float: left;
+  padding-right: 35%;
+  padding-left: 15%;
+  padding-top: 0%;
+  text-align: center;
+}
+
+#bodyContact {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: url(../images/brickwall2.png);
+}
+
+#contact h2 {
+  color: white;
+  text-align: center;
+  font-size: 2.4em;
+  margin-top: -50%;
+}
+
+#hi {
+  position: fixed;
+  margin-left: 70%;
+  margin-top: 20%;
+}
+
+#contactForm {
+  float: left;
+  letter-spacing: 0.5px;
+  line-height: 3em;
+  padding: 10%;
+  width: 80%;
+}
+
+#contactForm label {
+  display: block;
+  color: black;
+}
+
+#submit {
+  color: black;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: white;
+  width: 20% !important;
+  cursor: pointer;
+  display: block;
+}
+
+#contactForm input {
+  width: 50%;
+  height: 30px;
+}
+
+#comments {
+  width: 50%;
+}
+
+.blackLineContact {
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 75% 0, 55% 100%, 0% 100%);
+  clip-path: polygon(0 0, 75% 0, 55% 100%, 0% 100%);
+  float: left;
+  background-color: #0e0e0e;
+}
+
+#contactForm label {
+  color: white;
+  font-family: "Quicksand", "Avenir", sans-serif;
+}
+
+#contactInfoTitle {
+  margin: 0 auto;
+  font-family: "Quicksand", "Avenir", sans-serif;
+  color: black;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  font-weight: lighter;
+  font-size: 2em;
+}
+
+/* SOCIAL MEDIA */
+#socialContact a {
+  display: inline-block;
+  fill: black;
+  margin: 0 auto;
+  padding-left: 90%;
+}
+
 .hidden {
   display: none;
 }
@@ -273,7 +818,7 @@ body {
 
 @font-face {
   font-family: "dolce_vita_heavybold";
-  src: url("dolce_vita_heavy_bold-webfont.woff2") format("woff2"), url("dolce_vita_heavy_bold-webfont.woff") format("woff");
+  src: url("../fonts/dolce_vita_heavy_bold-webfont.woff2") format("woff2"), url("../fonts/dolce_vita_heavy_bold-webfont.woff") format("woff"), url("../fonts/dolce_vita_heavy_bold-webfont.otf") format("opentype"), url("../fonts/dolce_vita_heavy_bold-webfont.svg") format("svg"), url("../fonts/dolce_vita_heavy_bold-webfont.ttf") format("truetype"), url("../fonts/dolce_vita_heavy_bold-webfont.eot");
   font-weight: normal;
   font-style: normal;
 }

@@ -12,8 +12,6 @@
 #footerLogo
 {
     text-align: center;
-    width: 5%;
-    padding: 2%;
 }
 
 #socialIcons
@@ -23,10 +21,8 @@
 
 #socialIcons a
 {
-    width: 2%;
     height: auto;
     display: inline-block;
-    padding: 0.3%;
 }
 
 #socialIcons a:hover
@@ -42,4 +38,15 @@
     text-align: center;
     margin-top: 20px;
     letter-spacing: 1px;
+}
+
+#totop
+{
+    color: white;
+    font-family: $font-stock;
+    font-size: 0.7em;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
 }
