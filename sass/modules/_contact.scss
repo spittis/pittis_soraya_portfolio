@@ -116,7 +116,16 @@
 #socialContact a
 {
     display: inline-block;
-    fill: black;
+    width: 11%;
+    float: left;
+    -webkit-filter: invert(1);
     margin: 0 auto;
-    padding-left: 90%;
+    margin: 4%;
+}
+
+.lep
+{
+    font-family: $font-stock;
+    font-size: 1em;
+    padding-top: 2%;
 }
