@@ -14,13 +14,9 @@ From the command line:
 
 ```
 $ git init
-```
 Clone this repository
-```
 $ git clone https://github.com/spittis/pittis_soraya_portfolio.git
-```
 $ cd pittis_soraya_portfolio
-```
 Open the index.html in a browser, Chrome and Safari work best
 ```
 
