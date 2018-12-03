@@ -6,7 +6,24 @@
     text-align: center;
     margin: 0 auto;
     font-size: 1.2em;
-    padding: 15%;
+    padding-top: 4%;
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-bottom: 20%;;
+}
+
+.myIcons img
+{
+   width: 15%;
+}
+
+.myIcons
+{
+    float: left;
+    display: inline;
+    width: 33%;
+    text-align: center;
+    padding-top: 7%;
 }
 
 #skills
@@ -91,3 +108,98 @@
     color: white;
     font-family: $font-stock;
 }
+
+#school
+{
+    width: 100%;
+}
+
+#school h2
+{
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    text-align: center;
+    font-family: $font-stock;
+    font-size: 4em;
+    color: white;
+    padding: 5%;
+    font-weight: lighter;
+    letter-spacing: 0.3em;
+}
+
+#fanshawe 
+{
+    width: 49%;
+    position: relative;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    font-family: $font-stock;
+    font-size: 1.4em;
+    padding-bottom: 50px;
+}
+
+#western
+{
+    width: 49%;
+    position: relative;
+    color: white;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: $font-stock;
+    font-size: 1.4em;
+    padding-bottom: 50px;
+}
+
+#western img
+{
+    width: 25%;
+}
+
+#fanshawe img
+{
+    width: 30%;
+}
+
+
+
+
+#techs
+{
+    -webkit-clip-path: polygon(0 0, 100% 17%, 100% 83%, 0% 100%);
+    clip-path: polygon(0 0, 100% 17%, 100% 83%, 0% 100%);
+    background: url(../images/brickwall.png);
+    width: 100%;
+}
+
+#techs h2
+{
+    text-align: center;
+    font-family: $font-stock;
+    font-size: 4em;
+    color: rgb(211, 211, 250);
+    padding: 5%;
+    -webkit-animation: glowBlue 1s ease-in-out infinite alternate;
+    -moz-animation: glowBlue 1s ease-in-out infinite alternate;
+    animation: glowBlue 1s ease-in-out infinite alternate;
+    font-weight: lighter;
+    letter-spacing: 0.3em;
+    padding-top: 14%;
+}
+
+#techIcons
+{
+    text-align: center;
+    padding-bottom: 15%;
+}
+
+#techIcons img
+{
+    width: 7%;
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-bottom: 2%;
+}
+
