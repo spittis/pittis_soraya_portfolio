@@ -1,4 +1,4 @@
-    /*CONTACT ME*/
+    /*CONTACT US*/
 
 #headerContact
 {
@@ -21,10 +21,10 @@
     font-family: $font-stock;
     color: white;
     float: left;
+    padding-right: 35%;
     padding-left: 15%;
     padding-top: 0%;
     text-align: center;
-    margin-right: 40%;
 }
 
     #bodyContact
@@ -41,12 +41,11 @@
         font-size: 2.4em;
         margin-top: -50%;
     }
-
     #hi
     {
         position: fixed;
         margin-left: 70%;
-        margin-top: 30%;
+        margin-top: 20%;
     }
     
     #contactForm
@@ -54,10 +53,7 @@
         float: left;
         letter-spacing: 0.5px;
         line-height: 3em;
-        padding-bottom: 15%;
-        padding-top:2%;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding: 10%;
         width: 80%;
     }
 
@@ -83,7 +79,7 @@
     }
 
     #comments{
-        width: 100%;
+        width: 50%;
     }
 
 
@@ -107,13 +103,12 @@
 {
     margin: 0 auto;
     font-family: $font-stock; 
-    color: white;
-    -webkit-animation: glowBlue 1s ease-in-out infinite alternate;
-    -moz-animation: glowBlue 1s ease-in-out infinite alternate;
-    animation: glowBlue 1s ease-in-out infinite alternate;
+    color: black;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
     font-weight: lighter;
     font-size: 2em;
-    letter-spacing: 5px;
 }
 
 /* SOCIAL MEDIA */
@@ -133,306 +128,4 @@
     font-family: $font-stock;
     font-size: 1em;
     padding-top: 2%;
-}
-
-
-
-
-
-
-//TABLET
-
-@media (min-width: 480px) and (max-width: 768px) {
-
- 
-    #headerContact
-    {
-        width: 100% !important;
-        height: 100% !important;
-    }
-        
-    .contactHeading
-    {
-        font-family: $headers;
-        color: white;
-        padding-top: 5%;
-        font-size: 2.2em;
-        text-align: center !important;
-        margin: 0 auto !important;
-        padding-left: 0%;
-        float: none;
-
-    }
-    
-    #contactSentence
-    {
-        font-family: $font-stock;
-        color: white;
-        text-align: center;
-        margin-right: 0;
-    }
-    
-        #bodyContact
-        {
-          width: 100%;
-          background: url(../images/brickwall2.png);
-        }
-        
-        #contact h2{
-            color: white; 
-            text-align: center;
-            font-size: 2.4em;
-        }
-    
-        #hi
-        {
-            display: block;
-            position: relative;
-            margin-left: 0;
-            margin: 0 auto;
-            text-align: center;
-        }
-        
-        #contactForm
-        {
-            letter-spacing: 0.5px;
-            line-height: 3em;
-            padding-bottom: 15%;
-            padding-top:2%;
-            padding-left: 10%;
-            padding-right: 10%;
-            width: 80%;
-        }
-    
-        #contactForm label
-        {
-            display: block;
-            color: black;
-        }
-    
-        #submit{
-            color: black;
-            padding: 5px;
-            border-radius: 6px;
-            background-color: white;
-            width: 100% !important;
-            height: 5%;
-            cursor: pointer;
-            display: block;
-            margin: 0 auto;
-        }
-    
-        #contactForm input{
-            width: 100%;
-            height: 30px;
-        }
-    
-        #comments{
-            width: 100%;
-            height: 30px;
-        }
-
-        #name
-        {
-            width: 100%;
-            height: 30px; 
-        }
-    
-    
-    .blackLineContact
-    {
-        width: 100%;
-        background-color: #0e0e0e;
-        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 89%);
-        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 89%);
-    }
-    
-    
-    #contactForm label
-    {
-        color: white;
-        font-family: $font-stock;
-    }
-    
-    #contactInfoTitle /*Contact Info Title*/
-    {
-        font-family: $font-stock; 
-        color: white;
-        -webkit-animation: glowBlue 1s ease-in-out infinite alternate;
-        -moz-animation: glowBlue 1s ease-in-out infinite alternate;
-        animation: glowBlue 1s ease-in-out infinite alternate;
-        font-weight: lighter;
-        font-size: 2em;
-        letter-spacing: 5px;
-    }
-    
-    /* SOCIAL MEDIA */
-    
-    #socialContact a
-    {
-        display: inline-block;
-        width: 11%;
-        float: left;
-        -webkit-filter: invert(1);
-        margin: 0 auto;
-        margin: 4%;
-    }
-    
-    .lep
-    {
-        font-family: $font-stock;
-        font-size: 1em;
-        padding-top: 2%;
-    }
-
-}
-
-
-//MOBILE
-
-@media (max-width: 479px) {
-
-
-
-    #headerContact
-    {
-        width: 100% !important;
-        height: 100% !important;
-    }
-        
-    .contactHeading
-    {
-        font-family: $headers;
-        color: white;
-        padding-top: 5%;
-        font-size: 2.2em;
-        text-align: center !important;
-        margin: 0 auto !important;
-        padding-left: 0%;
-        float: none;
-
-    }
-    
-    #contactSentence
-    {
-        font-family: $font-stock;
-        color: white;
-        text-align: center;
-        margin-right: 0;
-    }
-    
-        #bodyContact
-        {
-          width: 100%;
-          background: url(../images/brickwall2.png);
-        }
-        
-        #contact h2{
-            color: white; 
-            text-align: center;
-            font-size: 2.4em;
-        }
-    
-        #hi
-        {
-            display: block;
-            position: relative;
-            margin-left: 0;
-            margin: 0 auto;
-            text-align: center;
-        }
-        
-        #contactForm
-        {
-            letter-spacing: 0.5px;
-            line-height: 3em;
-            padding-bottom: 15%;
-            padding-top:2%;
-            padding-left: 10%;
-            padding-right: 10%;
-            width: 80%;
-        }
-    
-        #contactForm label
-        {
-            display: block;
-            color: black;
-        }
-    
-        #submit{
-            color: black;
-            padding: 5px;
-            border-radius: 6px;
-            background-color: white;
-            width: 100% !important;
-            height: 5%;
-            cursor: pointer;
-            display: block;
-            margin: 0 auto;
-        }
-    
-        #contactForm input{
-            width: 100%;
-            height: 30px;
-        }
-    
-        #comments{
-            width: 100%;
-            height: 30px;
-        }
-
-        #name
-        {
-            width: 100%;
-            height: 30px; 
-        }
-    
-    
-    .blackLineContact
-    {
-        width: 100%;
-        background-color: #0e0e0e;
-        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 89%);
-        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 89%);
-    }
-    
-    
-    #contactForm label
-    {
-        color: white;
-        font-family: $font-stock;
-    }
-    
-    #contactInfoTitle /*Contact Info Title*/
-    {
-        font-family: $font-stock; 
-        color: white;
-        -webkit-animation: glowBlue 1s ease-in-out infinite alternate;
-        -moz-animation: glowBlue 1s ease-in-out infinite alternate;
-        animation: glowBlue 1s ease-in-out infinite alternate;
-        font-weight: lighter;
-        font-size: 2em;
-        letter-spacing: 5px;
-    }
-    
-    /* SOCIAL MEDIA */
-    
-    #socialContact a
-    {
-        display: inline-block;
-        width: 11%;
-        float: left;
-        -webkit-filter: invert(1);
-        margin: 0 auto;
-        margin: 4%;
-    }
-    
-    .lep
-    {
-        font-family: $font-stock;
-        font-size: 1em;
-        padding-top: 2%;
-    }
-
-
 }
