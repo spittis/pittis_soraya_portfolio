@@ -27,7 +27,7 @@
 <img id="headerImg" class="big" src="images/back3.jpg" alt="Soraya Pittis" title="Soraya Pittis">
 <img id="headerImg" class="small" src="images/header-mobile.jpg" alt="Soraya Pittis" title="Soraya Pittis"> <!--THEY HAVE THE SAME ID-->
 <h2 id="iam">I AM SORAYA.</h2>
-<p id="iam2">designer. photographer. producer.</p>
+<p id="iam2"><span id="des" class="animated fadeIn">designer.</span><span id="photographer" class="delay1 animated fadeIn"> photographer.</span> <span id="producer" class="delay2 animated fadeIn"> producer.</span></p>
 
 
 
@@ -76,26 +76,44 @@
 </div>  
 
 
-<main id="app"><!-- > Main tag for Vue <!-->
+<main id="app">
     <div id="portfolioTitleBox">
+        <h2 class="hidden">portfolio</h2>
         <h2 class="welcome-message">{{ welcomemessage }}</h2>
         <p>Check out a small sample of my most recent work</p>
     </div>
-<!--
-    <ul class="portfolioImages">
-        <li v-for="video in videodata">
-                <img class="logo" :src="'images/' + video.portfolio_thumb" alt="portfolio piece">
+
+
+    <ul class="noDot">
+        <li class="noDot" v-for="video in videodata" v-on:click="isHidden = !isHidden">
+         <!--<button v-on:click="fetchSingle" :data-movie="video.id" class="more-details">More Details</button> -->   
+            <a :href="video.vid_path" v-on:click="loadMovie">
+                <img class="portfolioImage" :src="'images/' + video.portfolio_thumb" width="200px">
             </a>
         </li>
     </ul>
--->
 
-
-   
-        <div v-for="video in videodata">
-            <img class="portfolioImage" :src="'images/' + video.portfolio_thumb" width="200px">
+    <div v-if="!isHidden"> 
+<div class="portfolioModal">
+    <span v-on:click="isHidden = true" class="close">close</span>
+    <section class="hidden-movies" :class="{ 'show-movie' : showDetails }">
+        <h3 class="movie-title">{{ videotitle }}</h3>
+        <img :src="'images/' + videosource" width="80%" class="imagess">
+        <div class="movie-details">
+            <p>{{ videodescription }}</p>
         </div>
-    
+    </section>
+</div>
+
+</div>
+</main>
+ 
+
+
+
+<!--
+
+
         <div>
             <img class="logo" src="images/strangerthings.jpg">
             <img class="logo" src="images/back.jpg" width="100px">
@@ -107,9 +125,8 @@
         <div id="caption"></div>
       </div>
 
-</main>
 
-
+-->
 
 <div id="totop">
     <h2 class="hidden">back to top</h2>

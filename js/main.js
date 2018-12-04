@@ -13,7 +13,10 @@
             videodescription : "",
             videosource : "",
 
-            showDetails : false 
+            showDetails : false,
+
+            isHidden: true, 
+ 
         },
 
         created : function() {

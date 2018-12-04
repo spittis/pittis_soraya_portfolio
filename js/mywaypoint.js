@@ -1,104 +1,80 @@
 window.onload = function(){
   console.log("Hello World");
   
-  //planets
+  //about contact icons
 
   var waypoint = new Waypoint({
-      element:document.getElementById("mercury"),
+      element:document.getElementById("locationIcon"),
       handler:function(direction){
           this.element.classList.add("slideInUp");
           this.element.classList.add("animated");
           this.element.classList.add("visible");
       },
-      offset: "90%"
+      offset: "80%"
   })
 
   var waypoint = new Waypoint({
-    element:document.getElementById("venus"),
+    element:document.getElementById("emailIcon"),
+    handler:function(direction){
+        this.element.classList.add("slideInUp");
+        this.element.classList.add("animated");
+        this.element.classList.add("visible");
+        this.element.classList.add("delay");
+    },
+    offset: "80%"
+})
+
+var waypoint = new Waypoint({
+    element:document.getElementById("phoneIcon"),
     handler:function(direction){
         this.element.classList.add("slideInUp");
         this.element.classList.add("animated");
         this.element.classList.add("visible");
     },
-    offset: "90%"
+    offset: "80%"
 })
 
+/* western */
+
 var waypoint = new Waypoint({
-    element:document.getElementById("mars"),
+    element:document.getElementById("west"),
     handler:function(direction){
         this.element.classList.add("slideInUp");
         this.element.classList.add("animated");
         this.element.classList.add("visible");
     },
-    offset: "90%"
+    offset: "80%"
 })
 
+/*fanshawe*/
+
 var waypoint = new Waypoint({
-    element:document.getElementById("earth"),
+    element:document.getElementById("fan"),
     handler:function(direction){
         this.element.classList.add("slideInUp");
         this.element.classList.add("animated");
         this.element.classList.add("visible");
     },
-    offset: "90%"
+    offset: "80%"
 })
 
+
+
+
+// SKILLS
+
 var waypoint = new Waypoint({
-    element:document.getElementById("jupiter"),
+    element:document.getElementById("photograph"),
     handler:function(direction){
-        this.element.classList.add("slideInUp");
+        this.element.classList.add("fadeIn");
         this.element.classList.add("animated");
         this.element.classList.add("visible");
-    },
-    offset: "90%"
-})
+      },
+      offset: "75%"
+  })
 
-var waypoint = new Waypoint({
-    element:document.getElementById("saturn"),
-    handler:function(direction){
-        this.element.classList.add("slideInUp");
-        this.element.classList.add("animated");
-        this.element.classList.add("visible");
-    },
-    offset: "90%"
-})
-
-var waypoint = new Waypoint({
-    element:document.getElementById("uranus"),
-    handler:function(direction){
-        this.element.classList.add("slideInUp");
-        this.element.classList.add("animated");
-        this.element.classList.add("visible");
-    },
-    offset: "90%"
-})
-
-var waypoint = new Waypoint({
-    element:document.getElementById("neptune"),
-    handler:function(direction){
-        this.element.classList.add("slideInUp");
-        this.element.classList.add("animated");
-        this.element.classList.add("visible");
-    },
-    offset: "90%"
-})
-
-
-
-//astronaut
-
-var waypoint = new Waypoint({
-  element:document.getElementById("visor_2_"),
-  handler:function(direction){
-      this.element.classList.add("fadeOut");
-      this.element.classList.add("animated");
-      this.element.classList.add("hidden");
-    },
-    offset: "45%"
-})
-
-var waypoint = new Waypoint({
-    element:document.getElementById("cometName"),
+  var waypoint = new Waypoint({
+    element:document.getElementById("design"),
     handler:function(direction){
         this.element.classList.add("fadeIn");
         this.element.classList.add("animated");
@@ -108,51 +84,35 @@ var waypoint = new Waypoint({
   })
 
   var waypoint = new Waypoint({
-    element:document.getElementById("asteroidsName"),
+    element:document.getElementById("branding"),
     handler:function(direction){
         this.element.classList.add("fadeIn");
         this.element.classList.add("animated");
         this.element.classList.add("visible");
       },
-      offset: "70%"
+      offset: "65%"
   })
 
   var waypoint = new Waypoint({
-    element:document.getElementById("moonName"),
+    element:document.getElementById("developing"),
     handler:function(direction){
         this.element.classList.add("fadeIn");
         this.element.classList.add("animated");
         this.element.classList.add("visible");
       },
-      offset: "70%"
+      offset: "60%"
   })
 
-  var waypoint = new Waypoint({
-    element:document.getElementById("planetsName"),
-    handler:function(direction){
-        this.element.classList.add("fadeIn");
-        this.element.classList.add("animated");
-        this.element.classList.add("visible");
-      },
-      offset: "70%"
-  })
 
-  var waypoint = new Waypoint({
-    element:document.getElementById("dwarfName"),
-    handler:function(direction){
-        this.element.classList.add("fadeIn");
-        this.element.classList.add("animated");
-        this.element.classList.add("visible");
-      },
-      offset: "70%"
-  })
+
+
 
   //tezt boxes below
 
   var waypoint = new Waypoint({
-    element:document.getElementById("mercury-text"),
+    element:document.getElementById("photoshop"),
     handler:function(direction){
-        this.element.classList.add("slideInLeft");
+        this.element.classList.add("flipInY");
         this.element.classList.add("animated");
         this.element.classList.add("visible");
       },
@@ -160,75 +120,143 @@ var waypoint = new Waypoint({
   })
 
   var waypoint = new Waypoint({
-    element:document.getElementById("venus-text"),
+    element:document.getElementById("xd"),
     handler:function(direction){
-        this.element.classList.add("slideInRight");
+        this.element.classList.add("flipInY");
         this.element.classList.add("animated");
         this.element.classList.add("visible");
       },
-      offset: "80%"
+      offset: "76%"
   })
 
   var waypoint = new Waypoint({
-    element:document.getElementById("earth-text"),
+    element:document.getElementById("ind"),
     handler:function(direction){
-        this.element.classList.add("slideInLeft");
+        this.element.classList.add("flipInY");
         this.element.classList.add("animated");
         this.element.classList.add("visible");
       },
-      offset: "80%"
+      offset: "76%"
   })
 
   var waypoint = new Waypoint({
-    element:document.getElementById("mars-text"),
+    element:document.getElementById("illustrator"),
     handler:function(direction){
-        this.element.classList.add("slideInRight");
+        this.element.classList.add("flipInY");
         this.element.classList.add("animated");
         this.element.classList.add("visible");
       },
-      offset: "80%"
+      offset: "72%"
   })
 
   var waypoint = new Waypoint({
-    element:document.getElementById("jupiter-text"),
+    element:document.getElementById("afe"),
     handler:function(direction){
-        this.element.classList.add("slideInLeft");
+        this.element.classList.add("flipInY");
         this.element.classList.add("animated");
         this.element.classList.add("visible");
       },
-      offset: "80%"
+      offset: "68%"
   })
 
   var waypoint = new Waypoint({
-    element:document.getElementById("saturn-text"),
+    element:document.getElementById("c4d"),
     handler:function(direction){
-        this.element.classList.add("slideInRight");
+        this.element.classList.add("flipInY");
         this.element.classList.add("animated");
         this.element.classList.add("visible");
       },
-      offset: "80%"
+      offset: "64%"
   })
 
   var waypoint = new Waypoint({
-    element:document.getElementById("uranus-text"),
+    element:document.getElementById("phhp"),
     handler:function(direction){
-        this.element.classList.add("slideInLeft");
+        this.element.classList.add("flipInY");
         this.element.classList.add("animated");
         this.element.classList.add("visible");
       },
-      offset: "80%"
-
+      offset: "60%"
   })
 
   var waypoint = new Waypoint({
-    element:document.getElementById("neptune-text"),
+    element:document.getElementById("sassy"),
     handler:function(direction){
-        this.element.classList.add("slideInRight");
+        this.element.classList.add("flipInY");
         this.element.classList.add("animated");
         this.element.classList.add("visible");
       },
-      offset: "80%"
+      offset: "56%"
   })
 
+  var waypoint = new Waypoint({
+    element:document.getElementById("sql"),
+    handler:function(direction){
+        this.element.classList.add("flipInY");
+        this.element.classList.add("animated");
+        this.element.classList.add("visible");
+      },
+      offset: "52%"
+  })
+
+  var waypoint = new Waypoint({
+    element:document.getElementById("ht"),
+    handler:function(direction){
+        this.element.classList.add("flipInY");
+        this.element.classList.add("animated");
+        this.element.classList.add("visible");
+      },
+      offset: "48%"
+  })
+
+  var waypoint = new Waypoint({
+    element:document.getElementById("cs"),
+    handler:function(direction){
+        this.element.classList.add("flipInY");
+        this.element.classList.add("animated");
+        this.element.classList.add("visible");
+      },
+      offset: "44%"
+  })
+
+  var waypoint = new Waypoint({
+    element:document.getElementById("greensock"),
+    handler:function(direction){
+        this.element.classList.add("flipInY");
+        this.element.classList.add("animated");
+        this.element.classList.add("visible");
+      },
+      offset: "40%"
+  })
+
+  var waypoint = new Waypoint({
+    element:document.getElementById("vu"),
+    handler:function(direction){
+        this.element.classList.add("flipInY");
+        this.element.classList.add("animated");
+        this.element.classList.add("visible");
+      },
+      offset: "36%"
+  })
+
+  var waypoint = new Waypoint({
+    element:document.getElementById("javas"),
+    handler:function(direction){
+        this.element.classList.add("flipInY");
+        this.element.classList.add("animated");
+        this.element.classList.add("visible");
+      },
+      offset: "32%"
+  })
+
+  var waypoint = new Waypoint({
+    element:document.getElementById("boots"),
+    handler:function(direction){
+        this.element.classList.add("flipInY");
+        this.element.classList.add("animated");
+        this.element.classList.add("visible");
+      },
+      offset: "28%"
+  })
 
 };

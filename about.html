@@ -25,7 +25,7 @@
     
     <div class="blackLine big"><div class="black big"><h2 id="myname">ABOUT ME</h2></div></div>
     <img id="headerImg" class="big" src="images/front-h.jpg" alt="Soraya Pittis" title="Soraya Pittis">
-    <img id="headerImg" class="small" src="images/header-mobile.jpg" alt="Soraya Pittis" title="Soraya Pittis">
+    <img id="headerImg" class="small" src="images/front-mobile.jpg" alt="Soraya Pittis" title="Soraya Pittis">
     <h2 id="iam">WHO'S SORAYA?</h2>
     <p id="iam2">not another brick in the wall.</p>
     
@@ -69,15 +69,15 @@
     <div id="aboutParagraph">
             <p>Hi, I'm Soraya Pittis. <br> I am a 21 year old interactive media developer and designer based in Toronto, Ontario. Other than designing, I am very passionate about eating food (especially pizza), travelling, and watching movies. </p>
             <div class="myIcons">
-                <img src="images/location.png">
+                <img id="locationIcon" class="hide" src="images/location.png">
                 <p>Toronto, Ontario</p>
             </div>
             <div class="myIcons">
-                <img src="images/email.png">
+                <img id="emailIcon" class="hide" src="images/email.png">
                 <p>soraya.pittis@hotmail.com</p>
             </div>
             <div class="myIcons">
-                <img src="images/phone.png">
+                <img id="phoneIcon" class="hide" src="images/phone.png">
                 <p>(647) 960-6367</p>
             </div>
     </div>
@@ -86,30 +86,30 @@
 <div id="skills">
         <h2>SKILLS</h2>
         <div id="skillIcons">
-            <img src="images/photography.png" id="photograph" class="data-ref" data-index="0" alt="photography" title="photography">
-            <img src="images/pencil.png" alt="design" title="design" id="design" class="data-ref" data-index="2">
-            <img src="images/branding.png" alt="branding" title="branding" id="branding" class="data-ref" data-index="3">
-            <img src="images/develop.png" alt="develop" title="develop" id="developing" class="data-ref" data-index="4">
+            <img src="images/photography.png" id="photograph" class="data-ref hide" data-index="0" alt="photography" title="photography">
+            <img src="images/pencil.png" alt="design" title="design" id="design" class="data-ref hide" data-index="2">
+            <img src="images/branding.png" alt="branding" title="branding" id="branding" class="data-ref hide" data-index="3">
+            <img src="images/develop.png" alt="develop" title="develop" id="developing" class="data-ref hide" data-index="4">
         </div>
     
 
 	<div id="skillInfo" class="modelInfo astro-box">
-		<h4 id="skill-title" class="modelName"></h4>
+		<h4 id="skill-title" class="modelName">These are a few areas I am experienced in!</h4>
 		<p class="priceInfo hidden"></p>
-		<p id="astro-text skillText" class="modelDetails">These are just a few of areas that I am experienced in!</p>
+		<p id="astro-text skillText" class="modelDetails">(click the icons for more info)</p>
 	</div>
 </div>
 
 <div id="school">
     <h2>EDUCATION</h2>
     <div id="fanshawe">
-        <img src="images/fanshawe.png" alt="fanshawe" title="fanshawe">
+        <img id="fan" class="hide" src="images/fanshawe.png" alt="fanshawe" title="fanshawe">
         <p>DIPLOMA</p>
         <p>Interactive Media Design</p>
         <p>Fanshawe College</p>
     </div>
     <div id="western">
-        <img src="images/western.svg" alt="western" title="western university">
+        <img id="west" class="hide" src="images/western.svg" alt="western" title="western university">
         <p>BACHELORS DEGREE</p>
         <p>Media, Information, and Technoculture</p>
         <p>Western University</p>
@@ -119,20 +119,21 @@
 <div id="techs">
     <h2>TECHNOLOGIES</h2>
     <div id="techIcons">
-        <img src="images/photoshop.png" alt="photoshop" title="photoshop">
-        <img src="images/xd.png" alt="adobe xd" title="adobe xd">
-        <img src="images/indesign.png" alt="indesign" title="indesign">
-        <img src="images/illustrator.png" alt="illustrator" title="illustrator">
-        <img src="images/c4d.png" alt="cinema 4d" title="cinema 4d">
-        <img src="images/php.png" alt="php" title="php">
-        <img src="images/sass.png" alt="sass" title="sass">
-        <img src="images/mysql.png" alt="mysql" title="mysql">
-        <img src="images/html.png" alt="html" title="html">
-        <img src="images/css.png" alt="css" title="css">
-        <img src="images/greensock.png" alt="greensock" title="greensock">
-        <img src="images/vue.png" alt="vue" title="vue">
-        <img src="images/js.png" alt="javascript" title="javascript">
-        <img src="images/bootstrap.png" alt="bootstrap" title="bootstrap">
+        <img src="images/photoshop.png" alt="photoshop" title="photoshop" id="photoshop" class="hide">
+        <img src="images/xd.png" alt="adobe xd" title="adobe xd" id="xd" class="hide">
+        <img src="images/indesign.png" alt="indesign" title="indesign" id="ind" class="hide">
+        <img src="images/illustrator.png" alt="illustrator" title="illustrator" id="illustrator" class="hide">
+        <img src="images/aftereffects.png" alt="after effects" title="after effects" id="afe" class="hide">
+        <img src="images/c4d.png" alt="cinema 4d" title="cinema 4d" id="c4d" class="hide">
+        <img src="images/php.png" alt="php" title="php" id="phhp" class="hide">
+        <img src="images/sass.png" alt="sass" title="sass" id="sassy" class="hide">
+        <img src="images/mysql.png" alt="mysql" title="mysql" id="sql" class="hide">
+        <img src="images/html.png" alt="html" title="html" id="ht" class="hide">
+        <img src="images/css.png" alt="css" title="css" id="cs" class="hide">
+        <img src="images/greensock.png" alt="greensock" title="greensock" id="greensock" class="hide">
+        <img src="images/vue.png" alt="vue" title="vue" id="vu" class="hide">
+        <img src="images/js.png" alt="javascript" title="javascript" id="javas" class="hide">
+        <img src="images/bootstrap.png" alt="bootstrap" title="bootstrap" id="boots" class="hide">
         
     </div>
 </div>

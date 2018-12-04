@@ -5,6 +5,8 @@
 @import 'modules/footer';
 @import 'modules/about';
 @import 'modules/contact';
+@import 'modules/cntower';
+@import 'modules/animate';
 
 .hidden {
     display:none;
@@ -30,3 +32,24 @@ body
       font-style: normal;
   
   }
+
+  
+.hide {
+  visibility: hidden;
+}
+
+.visible {
+visibility: visible !important;
+}
+
+.delay1 {
+  -animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+}
+
+.delay2 {
+  -animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+}
