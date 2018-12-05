@@ -13,3 +13,29 @@
     font-family: $font-stock;
     font-size: 1em;
 }
+
+#playPause
+{
+  cursor: pointer;
+  width: 50px;
+}
+
+
+#videovideo
+{
+    position: relative;
+    width: 50%;
+}
+
+#eventVid
+{
+    position: absolute;
+    width: 50%;
+}
+
+#controls
+{
+    position: absolute;
+    width: 100%;
+}
+

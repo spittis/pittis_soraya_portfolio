@@ -329,17 +329,6 @@
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
-/*
-#menuToggle span:nth-last-child(3)
-{
-  margin-left: -7%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  margin-left: -14%;
-}
-*/
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(47deg) translate(2px, -1px);
@@ -1691,6 +1680,26 @@
   color: white;
   font-family: "Quicksand", "Avenir", sans-serif;
   font-size: 1em;
+}
+
+#playPause {
+  cursor: pointer;
+  width: 50px;
+}
+
+#videovideo {
+  position: relative;
+  width: 50%;
+}
+
+#eventVid {
+  position: absolute;
+  width: 50%;
+}
+
+#controls {
+  position: absolute;
+  width: 100%;
 }
 
 @-webkit-keyframes bounce {

@@ -44,18 +44,6 @@
               opacity 0.55s ease;
 }
 
-/*
-#menuToggle span:nth-last-child(3)
-{
-  margin-left: -7%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  margin-left: -14%;
-}
-*/
-
 #menuToggle input:checked ~ span
 {
   opacity: 1;

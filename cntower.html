@@ -46,25 +46,27 @@
     <img src="images/cn-tower/cn-tower4.jpg">
     <img src="images/cn-tower/cn-tower5.jpg">
 
+<div id="videovideo">
     <video id="eventVid">
         <source src="images/cn-tower/event.mp4"  type="video/mp4">
-        <source src="video/pittis_soraya_trailer.ogg" type="video/ogg">
-        <source src="video/pittis_soraya_trailer.webm" type="video/webm">
-        Your Browser Does Not Support Video
-        <a href="images/cn-tower/event.mp4">Download</a> the video instead.
+        <source src="images/cn-tower/event.ogg" type="video/ogg">
+        <source src="images/cn-tower/event.webm" type="video/webm">
+        Your Browser Does Not Support Video: <a href="images/cn-tower/event.mp4">Download</a> the video instead.
     </video>
 
     <div id="controls">
-        <div id="playPause">PLAY</div>
-        <div id="muteVideo" class="player-button">MUTE</div>
+        <img id="playPause" src="images/play.svg">
+        <div id="muteVideo" class="hidden" class="player-button">MUTE</div>
         <div>
-            <input id="videoTime" type="range" min="0" max="100" value="0" step="0">
-           </div>
-        
-        <div>
-            <input id="volumeSlider" type="range" min="0" max="1" step="0.1" value="1">
+              
+            <input id="videoTime" class="hidden" type="range" min="0" max="100" value="0" step="0">
         </div>
+        <div>
+            <input id="volumeSlider" class="hidden" type="range" min="0" max="1" step="0.1" value="1">
+        </div>
+    
     </div>
+</div>
 
 </div>
 

@@ -4,13 +4,13 @@
         el : "#app",
 
         data : {
-            welcomemessage : "PORTFOLIO",
+            portfoliomessage : "PORTFOLIO",
 
             videodata : [],
             singledata : [],
 
-            videotitle : "",
-            videodescription : "",
+            imagetitle : "",
+            imagedescription : "",
             videosource : "",
 
             showDetails : false,
@@ -40,17 +40,35 @@
                 e.preventDefault(); //block this page reload 
 
                 dataKey = e.currentTarget.getAttribute('href'); //give me the href (video name-will either be force awakens, avenger, stranger things) and pull that object, set, then it will pull video title, description, source to whatever those things are, get those values, bound to my vue, everytime i click they change because im changing my vue someshit
-                currentData = this.videodata.filter(video => video.vid_path === dataKey); //grabbing avenger, star wars, etc. and grabbing the data out of it //vue model gets updated, so does other stuff
+                currentData = this.videodata.filter(video => video.img_path === dataKey); //grabbing avenger, star wars, etc. and grabbing the data out of it //vue model gets updated, so does other stuff
 
-                this.videotitle = currentData[0].vid_name;
-                this.videodescription = currentData[0].vid_desc;
+                this.imagetitle = currentData[0].img_name;
+                this.imagedescription = currentData[0].img_desc;
                 this.videosource = dataKey;
 
                 this.showDetails = true;
 
-                setTimeout(function(){ window.scrollTo(0, 1200)}, 500);
             },
 
+            loadHref(e) {
+                //debugger;
+                e.preventDefault(); //block this page reload 
+
+                dataKey = e.currentTarget.getAttribute('href'); //give me the href (video name-will either be force awakens, avenger, stranger things) and pull that object, set, then it will pull video title, description, source to whatever those things are, get those values, bound to my vue, everytime i click they change because im changing my vue someshit
+                currentData = this.videodata.filter(video => video.img_path === dataKey); //grabbing avenger, star wars, etc. and grabbing the data out of it //vue model gets updated, so does other stuff
+
+                this.imagetitle = currentData[0].img_name;
+                this.imagedescription = currentData[0].img_desc;
+                this.videosource = dataKey;
+
+                this.showDetails = true;
+
+                window = window.open(img_desc, windowName, [windowFeatures]);
+
+            },
+
+
+           
             fetchMovieData(movie) {
                let url = movie ?`./includes/index.php?movie=${movie}` : './includes/index.php'; 
                 //this is a ternary statement, shorthand if else statement. left of : is true, right is false
@@ -74,6 +92,8 @@
                 });
 
             }
+
+
         }
 
     })

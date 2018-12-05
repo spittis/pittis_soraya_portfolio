@@ -11,18 +11,48 @@
 	var volumeSlider = document.querySelector("#volumeSlider");
 
 
-
 //functions
+
+//switch images
 function playVideo() {
-	console.log("from playVideo");
+	//console.log("playing video");
 	if (trailers.paused){
 		trailers.play();
-		playSwitch.innerHTML = "PAUSE";
+		playSwitch.src = "images/pause.svg";
+		//console.log("image switch");
 	}else{
 		trailers.pause();
-		playSwitch.innerHTML = "PLAY";
+		playSwitch.src = "images/play.svg";
 	}
 }
+
+//hide buttons
+function showHide() {
+	//console.log("hide");
+	playSwitch.style.display = 'none';
+}
+
+//show play and pause button
+function show() {
+	playSwitch.style.display = 'block';
+	playSwitch.classList.add("fadeIn");
+    playSwitch.classList.add("animated");
+}
+
+function shownoAnimate() {
+	playSwitch.style.display = 'block';
+}
+
+function vidReset() {
+	trailers.currentTime = 0;
+	playSwitch.src = "images/play.svg";
+}
+
+
+
+
+
+//to edit below
 
 function vidmute () {
 	if(trailers.muted) {
@@ -55,6 +85,10 @@ function volumeCtrl () {
 	videoPlace.addEventListener("change", vidSeek, false);
 	trailers.addEventListener("timeupdate", seektimeupdate, false);
 	volumeSlider.addEventListener("change", volumeCtrl, false);
+	trailers.addEventListener("mouseout", showHide, false);
+	trailers.addEventListener("mouseover", show, false);
+	trailers.addEventListener("ended", vidReset, false);
+	playSwitch.addEventListener("mouseover", shownoAnimate, false);
 
 
 })();

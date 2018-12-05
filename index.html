@@ -79,28 +79,31 @@
 <main id="app">
     <div id="portfolioTitleBox">
         <h2 class="hidden">portfolio</h2>
-        <h2 class="welcome-message">{{ welcomemessage }}</h2>
+        <h2 class="portfolio-message">{{ portfoliomessage }}</h2>
         <p>Check out a small sample of my most recent work</p>
+        <button>View Reel</button>
     </div>
 
 
     <ul class="noDot">
         <li class="noDot" v-for="video in videodata" v-on:click="isHidden = !isHidden">
          <!--<button v-on:click="fetchSingle" :data-movie="video.id" class="more-details">More Details</button> -->   
-            <a :href="video.vid_path" v-on:click="loadMovie">
-                <img class="portfolioImage" :src="'images/' + video.portfolio_thumb" width="200px">
-            </a>
-        </li>
-    </ul>
+         <a :href="video.img_path" v-on:click="loadMovie">
+            <img class="portfolioImage" :src="'images/' + video.portfolio_thumb" width="200px">
+        </a>
+    </li>
+</ul>
 
     <div v-if="!isHidden"> 
 <div class="portfolioModal">
     <span v-on:click="isHidden = true" class="close">close</span>
     <section class="hidden-movies" :class="{ 'show-movie' : showDetails }">
-        <h3 class="movie-title">{{ videotitle }}</h3>
+        <h3 class="movie-title">{{ imagetitle }}</h3>
         <img :src="'images/' + videosource" width="80%" class="imagess">
         <div class="movie-details">
-            <p>{{ videodescription }}</p>
+            <!--<p>{{ imagedescription }}</p>
+            <button v-on:click="">VIEW CASE STUDY</button>-->
+            <a :href="imagedescription" v-on:click="loadHref"><p>view case study</p></a>
         </div>
     </section>
 </div>

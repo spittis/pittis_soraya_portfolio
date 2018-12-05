@@ -9,7 +9,7 @@ try {
     
 
 } catch (PDOException $exception) {
-    echo 'connect error!' . $exception->getMessage();
+    echo 'error with connection' . $exception->getMessage();
 }
 
 ?>
