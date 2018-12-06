@@ -3,8 +3,8 @@
 
 var_dump($_POST); 
 //the fake_mail is just a temporary replacement of mail() function within PHP
-function fake_mail($to, $subject, $message, $headers){
-    echo '==== Fake Emails ====' .PHP_EOL;
+mail($to, $subject, $message, $headers);{
+    echo '==== Emails ====' .PHP_EOL;
     echo 'Subject: '.$subject.PHP_EOL;
     echo 'Email To: '.$to.PHP_EOL;
     echo 'Message: '.$message.PHP_EOL; 
@@ -43,7 +43,7 @@ function send_email(){
     $headers = 'From: noreply@sorayapittis.com';
     $headers .= 'Reply-To: ' .$_POST['email'];
 
-    fake_mail($to, $subject, $message, $headers);
+    mail($to, $subject, $message, $headers);
     //In your server use the following line instead:
     //mail($to, $subject, $message, $headers);
 

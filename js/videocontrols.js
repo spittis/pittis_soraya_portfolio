@@ -28,7 +28,7 @@ function playVideo() {
 
 //hide buttons
 function showHide() {
-	//console.log("hide");
+	console.log("hide");
 	playSwitch.style.display = 'none';
 }
 
@@ -81,10 +81,10 @@ function volumeCtrl () {
 
 //listeners
 	playSwitch.addEventListener("click", playVideo, false);
-	muteVideo.addEventListener("click", vidmute, false);
-	videoPlace.addEventListener("change", vidSeek, false);
-	trailers.addEventListener("timeupdate", seektimeupdate, false);
-	volumeSlider.addEventListener("change", volumeCtrl, false);
+	//muteVideo.addEventListener("click", vidmute, false);
+	//videoPlace.addEventListener("change", vidSeek, false);
+	//trailers.addEventListener("timeupdate", seektimeupdate, false);
+	//volumeSlider.addEventListener("change", volumeCtrl, false);
 	trailers.addEventListener("mouseout", showHide, false);
 	trailers.addEventListener("mouseover", show, false);
 	trailers.addEventListener("ended", vidReset, false);
