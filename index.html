@@ -82,6 +82,7 @@
         <h2 class="portfolio-message">{{ portfoliomessage }}</h2>
         <p>Check out a small sample of my most recent work</p>
         <button>View Reel</button>
+        
     </div>
 
 
@@ -99,12 +100,12 @@
     <span v-on:click="isHidden = true" class="close">close</span>
     <section class="hidden-movies" :class="{ 'show-movie' : showDetails }">
         <h3 class="movie-title">{{ imagetitle }}</h3>
-        <img :src="'images/' + videosource" width="80%" class="imagess">
         <div class="movie-details">
-            <!--<p>{{ imagedescription }}</p>
-            <button v-on:click="">VIEW CASE STUDY</button>-->
-            <a :href="imagedescription" target="_blank"><p>view case study</p></a>
-        </div>
+                <p>{{ imagegen }}</p>
+                <a :href="imagedescription" target="_blank"><p>view full case study</p></a>
+            </div>
+        <img :src="'images/' + videosource" width="80%" class="imagess">
+        
     </section>
 </div>
 

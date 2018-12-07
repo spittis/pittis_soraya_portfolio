@@ -12,6 +12,7 @@
             imagetitle : "",
             imagedescription : "",
             videosource : "",
+            imagegen: "",
 
             showDetails : false,
 
@@ -45,6 +46,7 @@
                 this.imagetitle = currentData[0].img_name;
                 this.imagedescription = currentData[0].img_desc;
                 this.videosource = dataKey;
+                this.imagegen = currentData[0].vid_genre;
 
                 this.showDetails = true;
 

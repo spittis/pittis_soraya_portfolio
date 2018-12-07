@@ -1,5 +1,5 @@
 <?php
-    include 'connectp.php';
+    include 'connect.php';
     // get one video first
     function get_single_image($pdo, $vid) {
         $query = "SELECT * FROM images WHERE id = $vid"; 
