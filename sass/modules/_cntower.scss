@@ -53,13 +53,15 @@
     clip-path: polygon(0 0, 100% 17%, 100% 83%, 0% 100%);
     background: url(../images/brickwall.png);
     width: 100%;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .cases
 {
     width: 100%;
+    font-family: $font-stock;
+    font-size: 1.4em;
 }
 
 .caseStudy p
@@ -67,7 +69,7 @@
     padding-left: 4%;
     padding-right: 4%;
     font-family: $font-stock;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 .caseStudy h4
@@ -88,5 +90,33 @@
 {
     width: 25%;
     padding: 4%;
+    text-align: center;
+}
+
+
+//bottom
+#caseDate
+{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+#caseType
+{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+#collab
+{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+#techUsed
+{
     text-align: center;
 }
