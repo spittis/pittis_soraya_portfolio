@@ -101,10 +101,12 @@
     <section class="hidden-movies" :class="{ 'show-movie' : showDetails }">
         <h3 class="movie-title">{{ imagetitle }}</h3>
         <div class="movie-details">
-                <p>{{ imagegen }}</p>
-                <a :href="imagedescription" target="_blank"><p>view full case study</p></a>
+                <p class="modalDesc">{{ imagegen }}</p>
+                <a :href="imagedescription" target="_blank"><p class="case-study">view full case study</p></a>
             </div>
             <img :src="'images/' + videosource" width="80%" class="imagess">
+            
+            
            
         
 

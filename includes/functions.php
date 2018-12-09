@@ -1,8 +1,8 @@
 <?php
     include 'connect.php';
-    // get one video first
-    function get_single_image($pdo, $vid) {
-        $query = "SELECT * FROM images WHERE id = $vid"; 
+    // get one image
+    function get_single_image($pdo, $img) {
+        $query = "SELECT * FROM images WHERE id = $img"; 
         //attach the id in the thumnail to ensure you are getting the right image
 
         $get_image = $pdo->query($query);
@@ -14,7 +14,7 @@
         return $results;
     }
 
-    //get all videos
+    //get all images
     function get_all_images($pdo) {
         $query = "SELECT * FROM images";
         

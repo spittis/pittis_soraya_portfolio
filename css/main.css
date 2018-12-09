@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "dolce_vita_heavybold";
   src: url("./dolce_vita_heavy_bold-webfont.woff2") format("woff2"), url("./dolce_vita_heavy_bold-webfont.woff") format("woff");
@@ -89,6 +88,10 @@
     width: 8%;
     padding: 2%;
   }
+
+  .portfolioImage {
+    width: 100%;
+  }
 }
 @media (min-width: 480px) and (max-width: 768px) {
   .small {
@@ -144,6 +147,10 @@
     font-size: 1.2em;
     top: 50%;
     left: 60%;
+  }
+
+  .portfolioImage {
+    width: 50%;
   }
 
   /* TABLET - PORTFOLIO */
@@ -213,6 +220,10 @@
 @media (min-width: 769px) {
   .small {
     display: none;
+  }
+
+  .portfolioImage {
+    width: 50%;
   }
 
   #header {
@@ -292,6 +303,207 @@
   #socialIcons a {
     width: 2%;
     padding: 0.3%;
+  }
+}
+@media (max-width: 479px) {
+  #cntowerTitle {
+    font-size: 3em;
+  }
+
+  #cntowerText p {
+    font-size: 0.5em;
+  }
+
+  #videovideo {
+    position: relative;
+    padding-bottom: 70%;
+  }
+
+  #eventVid {
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+
+  #controls {
+    position: absolute;
+    width: 100%;
+  }
+
+  .caseStudy {
+    padding-top: 50%;
+    padding-bottom: 60%;
+  }
+
+  .caseStudy p {
+    font-size: 0.9em;
+  }
+
+  .caseStudy h4 {
+    font-size: 1em;
+  }
+
+  #cntowerWork img {
+    width: 80%;
+    padding: 4%;
+  }
+
+  #playPause {
+    width: 50% !important;
+  }
+
+  #caseDate {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  #caseType {
+    width: 100%;
+  }
+
+  #collab {
+    width: 100%;
+    padding-bottom: 25px;
+  }
+
+  #techUsed img {
+    width: 10%;
+    padding: 1%;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  #cntowerTitle {
+    font-size: 3.5em;
+  }
+
+  #cntowerText p {
+    font-size: 1.5em;
+  }
+
+  #videovideo {
+    position: relative;
+    padding-bottom: 70%;
+  }
+
+  #eventVid {
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+
+  #controls {
+    position: absolute;
+    width: 100%;
+  }
+
+  .caseStudy {
+    padding-top: 10%;
+    padding-bottom: 20%;
+  }
+
+  .caseStudy p {
+    font-size: 1em;
+  }
+
+  .caseStudy h4 {
+    font-size: 1.2em;
+  }
+
+  #cntowerWork img {
+    width: 50%;
+    padding: 4%;
+  }
+
+  #playPause {
+    width: 30%;
+  }
+
+  #caseDate {
+    width: 33.3%;
+  }
+
+  #caseType {
+    width: 33.3%;
+  }
+
+  #collab {
+    width: 33.3%;
+  }
+
+  #techUsed img {
+    width: 10%;
+    padding: 1%;
+  }
+}
+@media (min-width: 769px) {
+  #cntowerTitle {
+    font-size: 4em;
+  }
+
+  #cntowerText p {
+    color: white;
+    font-family: "Quicksand", "Avenir", sans-serif;
+    font-size: 1em;
+  }
+
+  #videovideo {
+    position: relative;
+    padding-bottom: 70%;
+  }
+
+  #eventVid {
+    position: absolute;
+    width: 70%;
+    left: 0;
+    margin: 15%;
+  }
+
+  #controls {
+    position: absolute;
+    width: 70%;
+    margin: 15%;
+  }
+
+  .caseStudy {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .caseStudy p {
+    font-size: 1.2em;
+  }
+
+  .caseStudy h4 {
+    font-size: 2em;
+  }
+
+  #cntowerWork img {
+    width: 25%;
+    padding: 4%;
+  }
+
+  #playPause {
+    width: 50% !important;
+    margin-top: 10%;
+  }
+
+  #caseDate {
+    width: 33.3%;
+  }
+
+  #caseType {
+    width: 33.3%;
+  }
+
+  #collab {
+    width: 33.3%;
+  }
+
+  #techUsed img {
+    width: 5%;
+    padding: 1%;
   }
 }
 /* LOGO */
@@ -544,7 +756,6 @@
   }
 }
 .portfolioImage {
-  width: 50%;
   display: inline;
   float: left;
 }
@@ -636,6 +847,27 @@
   font-family: "Quicksand", "Avenir", sans-serif;
   color: white;
   text-align: center;
+}
+
+.modalDesc {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  font-size: 1em;
+}
+
+.case-study {
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  font-family: "dolce_vita_heavybold", sans-serif;
+  padding-bottom: 3%;
+}
+
+.case-study:hover {
+  color: white;
+  font-size: 1em;
+  text-decoration: underline;
 }
 
 #footer {
@@ -1189,6 +1421,31 @@
   height: 100% !important;
 }
 
+#submit:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+#name {
+  background: rgba(255, 0, 0, 0);
+  color: white;
+  font-family: "Quicksand", "Avenir", sans-serif;
+}
+
+#email {
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  font-family: "Quicksand", "Avenir", sans-serif;
+}
+
+#message {
+  background: rgba(0, 0, 0, 0);
+  border-color: white;
+  color: white;
+  font-family: "Quicksand", "Avenir", sans-serif;
+}
+
 .contactHeading {
   font-family: "dolce_vita_heavybold", sans-serif;
   color: white;
@@ -1245,22 +1502,19 @@
 }
 
 #submit {
-  color: black;
   padding: 5px;
-  border-radius: 6px;
-  background-color: white;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0);
   width: 20% !important;
   cursor: pointer;
   display: block;
+  font-family: "Quicksand", "Avenir", sans-serif;
+  color: white;
 }
 
 #contactForm input {
   width: 50%;
   height: 30px;
-}
-
-#comments {
-  width: 100%;
 }
 
 .blackLineContact {
@@ -1305,6 +1559,10 @@
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
+  #message {
+    width: 100%;
+  }
+
   #headerContact {
     width: 100% !important;
     height: 100% !important;
@@ -1313,7 +1571,7 @@
   .contactHeading {
     font-family: "dolce_vita_heavybold", sans-serif;
     color: white;
-    padding-top: 5%;
+    padding-top: 15%;
     font-size: 2.2em;
     text-align: center !important;
     margin: 0 auto !important;
@@ -1345,6 +1603,7 @@
     margin-left: 0;
     margin: 0 auto;
     text-align: center;
+    z-index: -2;
   }
 
   #contactForm {
@@ -1365,13 +1624,13 @@
   #submit {
     color: black;
     padding: 5px;
-    border-radius: 6px;
-    background-color: white;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0);
     width: 100% !important;
     height: 5%;
     cursor: pointer;
     display: block;
-    margin: 0 auto;
+    color: white;
   }
 
   #contactForm input {
@@ -1420,6 +1679,7 @@
     -webkit-filter: invert(1);
     margin: 0 auto;
     margin: 4%;
+    text-align: center;
   }
 
   .lep {
@@ -1428,7 +1688,16 @@
     padding-top: 2%;
   }
 }
+@media (min-width: 769px) {
+  #message {
+    width: 50%;
+  }
+}
 @media (max-width: 479px) {
+  #message {
+    width: 100%;
+  }
+
   #headerContact {
     width: 100% !important;
     height: 100% !important;
@@ -1437,7 +1706,7 @@
   .contactHeading {
     font-family: "dolce_vita_heavybold", sans-serif;
     color: white;
-    padding-top: 5%;
+    padding-top: 20%;
     font-size: 2.2em;
     text-align: center !important;
     margin: 0 auto !important;
@@ -1470,6 +1739,7 @@
     margin-left: 0;
     margin: 0 auto;
     text-align: center;
+    z-index: -2;
   }
 
   #contactForm {
@@ -1490,13 +1760,14 @@
   #submit {
     color: black;
     padding: 5px;
-    border-radius: 6px;
-    background-color: white;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0);
     width: 100% !important;
     height: 5%;
     cursor: pointer;
     display: block;
     margin: 0 auto;
+    color: white;
   }
 
   #contactForm input {
@@ -1554,44 +1825,24 @@
   }
 }
 .backButton {
-  padding: 2%;
-  padding-left: 5px;
+  padding: 1%;
+  padding-left: 15px;
 }
 
 #cntowerTitle {
   color: white;
   font-family: "dolce_vita_heavybold", sans-serif;
   text-align: center;
-  font-size: 4em;
 }
 
 #cntowerText p {
   color: white;
   font-family: "Quicksand", "Avenir", sans-serif;
-  font-size: 1em;
 }
 
 #playPause {
   cursor: pointer;
-  width: 50%;
   margin: 0 auto;
-  margin-top: 10%;
-}
-
-#videovideo {
-  position: relative;
-  padding-bottom: 70%;
-}
-
-#eventVid {
-  position: absolute;
-  width: 100%;
-  left: 0;
-}
-
-#controls {
-  position: absolute;
-  width: 100%;
 }
 
 .caseStudy {
@@ -1599,8 +1850,6 @@
   clip-path: polygon(0 0, 100% 17%, 100% 83%, 0% 100%);
   background: url(../images/brickwall.png);
   width: 100%;
-  padding-top: 10%;
-  padding-bottom: 10%;
 }
 
 .cases {
@@ -1613,14 +1862,12 @@
   padding-left: 4%;
   padding-right: 4%;
   font-family: "Quicksand", "Avenir", sans-serif;
-  font-size: 1.2em;
 }
 
 .caseStudy h4 {
   padding-left: 4%;
   padding-right: 2%;
   font-family: "dolce_vita_heavybold", sans-serif;
-  font-size: 2em;
 }
 
 #cntowerWork {
@@ -1629,31 +1876,31 @@
 }
 
 #cntowerWork img {
-  width: 25%;
-  padding: 4%;
   text-align: center;
 }
 
 #caseDate {
-  width: 33.3%;
   float: left;
   text-align: center;
 }
 
 #caseType {
-  width: 33.3%;
   float: left;
   text-align: center;
 }
 
 #collab {
-  width: 33.3%;
   float: left;
   text-align: center;
 }
 
 #techUsed {
   text-align: center;
+  width: 100%;
+}
+
+.tectTitle {
+  font-family: "dolce_vita_heavybold", sans-serif;
 }
 
 @-webkit-keyframes bounce {
@@ -4696,6 +4943,7 @@ body {
   padding: 0;
   width: 100%;
   background: url(../images/dark2.jpg);
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -4722,10 +4970,6 @@ body {
   -animation-delay: 2s;
   -webkit-animation-delay: 2s;
   -moz-animation-delay: 2s;
-}
-
-#html {
-    scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=main.css.map */

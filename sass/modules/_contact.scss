@@ -5,6 +5,35 @@
     width: 100% !important;
     height: 100% !important;
 }
+
+#submit:hover
+{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+#name
+{
+    background: rgba(255, 0, 0, 0);
+    color: white;
+    font-family: $font-stock;
+}
+
+#email
+{
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    font-family: $font-stock;
+}
+
+#message
+{
+    background: rgba(0, 0, 0, 0);
+    border-color: white;
+    color: white;
+    font-family: $font-stock;
+}
     
 .contactHeading
 {
@@ -68,22 +97,20 @@
     }
 
     #submit{
-        color: black;
+        //color: black;
         padding: 5px;
-        border-radius: 6px;
-        background-color: white;
+        border-radius: 2px;
+        background-color: rgba(0, 0, 0, 0);
         width: 20% !important;
         cursor: pointer;
         display: block;
+        font-family: $font-stock;
+        color: white;
     }
 
     #contactForm input{
         width: 50%;
         height: 30px;
-    }
-
-    #comments{
-        width: 100%;
     }
 
 
@@ -139,11 +166,15 @@
 
 
 
-
 //TABLET
 
 @media (min-width: 480px) and (max-width: 768px) {
 
+
+    #message
+    {
+        width: 100%;
+    }
  
     #headerContact
     {
@@ -155,7 +186,7 @@
     {
         font-family: $headers;
         color: white;
-        padding-top: 5%;
+        padding-top: 15%;
         font-size: 2.2em;
         text-align: center !important;
         margin: 0 auto !important;
@@ -191,6 +222,7 @@
             margin-left: 0;
             margin: 0 auto;
             text-align: center;
+            z-index: -2;
         }
         
         #contactForm
@@ -213,13 +245,13 @@
         #submit{
             color: black;
             padding: 5px;
-            border-radius: 6px;
-            background-color: white;
+            border-radius: 2px;
+            background-color: rgba(0, 0, 0, 0);
             width: 100% !important;
             height: 5%;
             cursor: pointer;
             display: block;
-            margin: 0 auto;
+            color: white;
         }
     
         #contactForm input{
@@ -276,6 +308,7 @@
         -webkit-filter: invert(1);
         margin: 0 auto;
         margin: 4%;
+        text-align: center;
     }
     
     .lep
@@ -287,12 +320,25 @@
 
 }
 
+// desktop
+
+@media (min-width: 769px) {
+    #message
+    {
+        width:50%;
+    }
+
+}
+
 
 //MOBILE
 
 @media (max-width: 479px) {
 
-
+#message
+{
+    width: 100%;
+}
 
     #headerContact
     {
@@ -304,7 +350,7 @@
     {
         font-family: $headers;
         color: white;
-        padding-top: 5%;
+        padding-top: 20%;
         font-size: 2.2em;
         text-align: center !important;
         margin: 0 auto !important;
@@ -341,6 +387,7 @@
             margin-left: 0;
             margin: 0 auto;
             text-align: center;
+            z-index: -2;
         }
         
         #contactForm
@@ -363,13 +410,14 @@
         #submit{
             color: black;
             padding: 5px;
-            border-radius: 6px;
-            background-color: white;
+            border-radius: 3px;
+            background-color: rgba(0, 0, 0, 0);
             width: 100% !important;
             height: 5%;
             cursor: pointer;
             display: block;
             margin: 0 auto;
+            color: white;
         }
     
         #contactForm input{

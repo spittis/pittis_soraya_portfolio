@@ -32,7 +32,6 @@
 	
 .portfolioImage
 {
-  width: 50%;
   display:inline;
   float: left;
 }
@@ -136,4 +135,28 @@
   font-family: $font-stock;
   color: white;
   text-align: center;
+}
+
+.modalDesc
+{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  font-size: 1em;
+}
+
+.case-study
+{
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  font-family: $headers;
+  padding-bottom: 3%;
+}
+
+.case-study:hover
+{
+  color: white;
+  font-size: 1em;
+  text-decoration: underline;
 }

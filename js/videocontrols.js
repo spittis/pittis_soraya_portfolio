@@ -5,9 +5,9 @@
 
 //variables
 	var playSwitch = document.querySelector("#playPause");
-	var trailers = document.querySelector("#eventVid");
-	var muteVideo = document.querySelector("#muteVideo");
-	var videoPlace = document.querySelector("#videoTime");
+	var videos = document.querySelector("#eventVid");
+	var muteVideos = document.querySelector("#muteVideo");
+	var videoPlace = document.querySelector("#time");
 	var volumeSlider = document.querySelector("#volumeSlider");
 
 
@@ -16,12 +16,12 @@
 //switch images
 function playVideo() {
 	//console.log("playing video");
-	if (trailers.paused){
-		trailers.play();
+	if (videos.paused){
+		videos.play();
 		playSwitch.src = "images/pause.svg";
 		//console.log("image switch");
 	}else{
-		trailers.pause();
+		videos.pause();
 		playSwitch.src = "images/play.svg";
 	}
 }
@@ -30,13 +30,15 @@ function playVideo() {
 function showHide() {
 	console.log("hide");
 	playSwitch.style.display = 'none';
+	muteVideos.style.display = 'none';
 }
 
 //show play and pause button
 function show() {
 	playSwitch.style.display = 'block';
 	playSwitch.classList.add("fadeIn");
-    playSwitch.classList.add("animated");
+	muteVideos.classList.add("animated");
+	muteVideos.style.display = 'block';
 }
 
 function shownoAnimate() {
@@ -44,51 +46,53 @@ function shownoAnimate() {
 }
 
 function vidReset() {
-	trailers.currentTime = 0;
+	videos.currentTime = 0;
 	playSwitch.src = "images/play.svg";
 }
 
-
-
-
-
-//to edit below
-
-function vidmute () {
-	if(trailers.muted) {
-		trailers.muted = false;
-		muteVideo.innerHTML = "MUTE"; //if not mute, this will show
+//mute
+function videoMute () {
+	if(videos.muted) {
+		videos.muted = false;
+		muteVideos.src = "images/mute.png"; 
 	} else {
-		trailers.muted = true;
-		muteVideo.innerHTML = "UNMUTE"; //if muted, this will show... maybe put pictures instead of words
+		videos.muted = true;
+		muteVideos.src = "images/unmute.png"; //if muted, change to unmute pic
 	}
 }
 
+
+// time changers
 function vidSeek (){
-	var seekto = trailers.duration * (videoPlace.value / 100);
-	trailers.currentTime = seekto;
+	var seekto = videos.duration * (videoPlace.value / 100);
+	videos.currentTime = seekto;
 }
 
-function seektimeupdate () {
-	var nt = trailers.currentTime * (100 / trailers.duration);
-	videoPlace.value = nt; //time is equivalent to the slider
+function timeChange () {
+	var time = videos.currentTime * (100 / videos.duration);
+	videoPlace.value = time; //time is equivalent to the slider
 }
 
-function volumeCtrl () {
-	trailers.volume = volumeSlider.value; //volume is equivalent to the slider
-}
+// function volumeCtrl () {
+// 	videos.volume = volumeSlider.value; //volume is equivalent to the slider
+// }
 
 
 //listeners
 	playSwitch.addEventListener("click", playVideo, false);
-	//muteVideo.addEventListener("click", vidmute, false);
-	//videoPlace.addEventListener("change", vidSeek, false);
-	//trailers.addEventListener("timeupdate", seektimeupdate, false);
-	//volumeSlider.addEventListener("change", volumeCtrl, false);
-	trailers.addEventListener("mouseout", showHide, false);
-	trailers.addEventListener("mouseover", show, false);
-	trailers.addEventListener("ended", vidReset, false);
+	muteVideos.addEventListener("click", videoMute, false);
+	videos.addEventListener("mouseout", showHide, false);
+	videos.addEventListener("mouseover", show, false);
+	videos.addEventListener("ended", vidReset, false);
 	playSwitch.addEventListener("mouseover", shownoAnimate, false);
+	muteVideos.addEventListener("mouseout", showHide, false);
+	muteVideos.addEventListener("mouseover", show, false);
+	videoPlace.addEventListener("change", vidSeek, false);
+	videos.addEventListener("timeupdate", timeChange, false);
+
+
+	// volumeSlider.addEventListener("change", volumeCtrl, false);
+	
 
 
 })();

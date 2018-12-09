@@ -19,6 +19,7 @@ body
       padding: 0;
       width: 100%;
       background: url(../images/dark2.jpg);
+      scroll-behavior: smooth;
     }
     
     @font-face {
@@ -54,7 +55,3 @@ visibility: visible !important;
   -webkit-animation-delay: 2s;
   -moz-animation-delay: 2s;
 }
-
-
-#html {
-    scroll-behavior: smooth; }

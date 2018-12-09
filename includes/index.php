@@ -1,14 +1,13 @@
 <?php
     include 'functions.php';
     
-    //single movie route
-    if (isset($_GET["movie"])){
+ 
+    if (isset($_GET["movie"])){ //this gets a single image
         $data = get_single_image($conn, $_GET["movie"]);
         echo json_encode($data);
     } else {
-        $data = get_all_images($conn);
+        $data = get_all_images($conn); //this gets all
         echo json_encode($data);
-        //can use this for portfolio pieces too - does not only apply to videos
     }
 
 ?>
