@@ -81,16 +81,15 @@
         <h2 class="hidden">portfolio</h2>
         <h2 class="portfolio-message">{{ portfoliomessage }}</h2>
         <p>Check out a small sample of my most recent work</p>
-        <button>View Reel</button>
-        
-    </div>
+</div>
+ 
 
 
     <ul class="noDot">
         <li class="noDot" v-for="video in videodata" v-on:click="isHidden = !isHidden">
          <!--<button v-on:click="fetchSingle" :data-movie="video.id" class="more-details">More Details</button> -->   
          <a :href="video.img_path" v-on:click="loadMovie">
-            <img class="portfolioImage" :src="'images/' + video.portfolio_thumb" width="200px">
+            <img class="portfolioImage" :src="'images/' + video.portfolio_thumb">
         </a>
     </li>
 </ul>
@@ -103,10 +102,17 @@
         <div class="movie-details">
                 <p class="modalDesc">{{ imagegen }}</p>
                 <a :href="imagedescription" target="_blank"><p class="case-study">view full case study</p></a>
-            </div>
-            <img :src="'images/' + videosource" width="80%" class="imagess">
+           
+            <video id="videoModal" controls>
+                    <source :src="'images/' + videosource" type="video/mp4" >
+                    <!-- <source src="'images/' + videosource" type="video/ogg">
+                    <source src="'images/' + videosource" type="video/webm"> -->
+                </video>
+                
+            <!-- <img :src="'images/' + videosource" width="80%" class="imagess"> -->
             
             
+        </div>
            
         
 

@@ -1,11 +1,12 @@
 (() => {
 
-    const cars = document.querySelectorAll('.data-ref'); //add some event handling at the bottom, check url //declaring cars
+    function getData(i) {
 
-    function getData() {
+        console.log(i);
+
 
         //whenever we click on a thumbnail, pass its id to the php query (it will go through each one)
-        let targetURL = `./includes/connect.php?modelNo=${this.id}`; //this is the url we have open in the browser window ow //this is hardcoded to one car.. fetch goes and gets it, parses it, then goes nad puts that stuff on the page
+        let targetURL = `./includes/index.php?id=${i}`; //this is the url we have open in the browser window ow //this is hardcoded to one car.. fetch goes and gets it, parses it, then goes nad puts that stuff on the page
 //grab that id and apply that to our string?
 
 
@@ -32,7 +33,18 @@
         document.querySelector('.modelDetails').textContent = modelDetails;
     }
 
-    cars.forEach(car => car.addEventListener("click", getData)); //cars has been declared at the top
+    document.querySelector('#photograph').addEventListener('click', function() {
+        getData(0);
+    });
+    document.querySelector('#design').addEventListener('click', function() {
+        getData(1);
+    });
+    document.querySelector('#branding').addEventListener('click', function() {
+        getData(2);
+    });
+    document.querySelector('#developing').addEventListener('click', function() {
+        getData(3);
+    });
 
 
     //getData(); //trigger the getData function //this is calling the fetch right when the page loads

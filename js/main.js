@@ -36,6 +36,11 @@
                 this.fetchMovieData(e.currentTarget.dataset.movie);
             },
 
+            fetchReel(e) {
+                              //debugger;
+                              this.fetchMovieData(e.currentTarget.dataset.type = 'image');
+                          },
+
             loadMovie(e) {
                 //debugger;
                 e.preventDefault(); //block this page reload 
