@@ -5,6 +5,10 @@
   font-style: normal;
 }
 @media (max-width: 479px) {
+  #myModal {
+    display: none !important;
+  }
+
   .big {
     display: none;
   }
@@ -104,6 +108,10 @@
 
   #myname {
     display: none;
+  }
+
+  #myModal {
+    display: none !important;
   }
 
   #header {
@@ -1000,6 +1008,10 @@
 #videoModal {
   padding-bottom: 200px;
   width: 100%;
+}
+
+.logo {
+  cursor: pointer;
 }
 
 #footer {

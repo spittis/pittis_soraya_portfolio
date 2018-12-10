@@ -3,7 +3,7 @@
 var modal = document.querySelector("#myModal");
 var span = document.querySelectorAll(".close");
 var imgs = document.querySelectorAll(".logo");
-var modalImg = document.querySelector("#img01");
+var modalImg = document.querySelector("#img");
 var captionText = document.querySelector("#caption");
 
 

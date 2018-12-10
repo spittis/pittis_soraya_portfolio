@@ -4,6 +4,10 @@
 
 @media (max-width: 479px) {
 
+    #myModal
+    {
+        display: none !important;
+    }
 .big
 {
     display:none;
@@ -147,6 +151,10 @@
         display: none;
     }
 
+    #myModal
+    {
+        display: none !important;
+    }
     
 
     
